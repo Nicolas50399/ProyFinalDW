@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitas</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 class="headerTit ">VISITAS</h1>
+        <div class="headerLogo">
+            <img src="" alt="">LOGO
+        </div>
+        <div class="headerNav">
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a class="ricoNegro bordadoBoke" href="../index.html">INICIO</a>
+                        <ul class="submenu">
+                            <li><a href="">Que ofrecemos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="ricoNegro bordadoBoke" href="quienesSomos.html">NOSOTROS</a>
+                        <ul class="submenu">
+                            <li><a href="">Nuestro gusto por el fútbol</a></li>
+                            <li><a href="">El arte de los estadios</a></li>
+                            <li><a href="">Nuestra relación con los clubes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="ricoNegro bordadoBoke" href="contacto.html">CONTACTO</a>
+                        <ul class="submenu">
+                            <li><a href="">Comunicate con nosotros</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="ricoNegro bordadoBoke" href="estadios.html">ESTADIOS</a>
+                        <ul class="submenu">
+                            <li><a href="">Los más grandes</a></li>
+                            <li><a href="">Los más artísticos</a></li>
+                            <li><a href="">Los más míticos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="ricoNegro bordadoBoke" href="#">VISITAS</a>
+                        <ul class="submenu">
+                            <li><a href="">Tours y Entradas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="tituloSecundario">Tours y Entradas</h1>
+            <h2 class="tituloTerciario">¡Llená el formulario!</h2>
+            <form action="" method="get" enctype="text/plain">
+                <fieldset>
+                    <legend>Visitas</legend>
+                    <label for="infoPersonal">Nombre:</label>
+                    <input type="text" name="userName" id="infoPersonal" placeholder="Nombre" required>
+                    <br><br>
+                    <label for="infoPersonal">Apellido:</label>
+                    <input type="text" name="userLastName" id="infoPersonal" placeholder="Apellido" required>
+                    <br><br>
+                    <label for="infoPersonal">Email:</label>
+                    <input type="email" name="userMail" id="infoPersonal" placeholder="Email" required>
+                    <br><br>
+                    <label for="">Tipo de visita:</label>
+                    <input type="radio" name="tipoVisita" id="" value="tour" required>Tour
+                    <input type="radio" name="tipoVisita" id="" value="partido" required>Partido
+                    <br><br>
+                    <label for="estadio">Pais del estadio:</label>
+                    <select name="userPaisEstadio" id="userCountryStadium" required>
+                        <option value="" disabled selected>Seleccione Pais</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="inglaterra">Inglaterra</option>
+                        <option value="españa">España</option>
+                        <option value="italia">Italia</option>
+                        <option value="qatar">Qatar</option>
+                    </select>
+                    <br><br>
+                    
+                    <label for="start">Fecha de visita:</label>
+        
+                    <input type="date" id="start" name="trip-start"
+                    value="2022-01-01"
+                    min="2022-01-01" max="2024-12-31">
+                    <br><br>
+                    <label for="infoPersonal">¿Querés agregar algo?</label>
+                    <br>
+                    <textarea name="" id="" cols="35" rows="9" maxlength="300" placeholder="Notas del pedido (max 300 caracteres)"></textarea>
+                    <br><br>
+                    <label for="condition">No soy un robot</label>
+                    <input type="checkbox" name="mandatory" id="condition" value="1" required>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footerLogo">
+            <img src="" alt="">LOGO
+        </div>
+        <div class="footerNav">
+            <nav>
+                <ul>
+                    <li><a class="bordadoFooter" href="../index.html">INICIO</a></li>
+                    <li><a class="bordadoFooter" href="quienesSomos.html">NOSOTROS</a></li>
+                    <li><a class="bordadoFooter" href="contacto.html">CONTACTO</a></li>
+                    <li><a class="bordadoFooter" href="estadios.html">ESTADIOS</a></li>
+                    <li><a class="bordadoFooter" href="#">VISITAS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="redes">
+            <a href="">
+                <img class="youtube bordadoRedes" src="../assets/youtube.png" alt="Youtube">
+            </a>
+            <a href="">
+                <img class="bordadoRedes" src="../assets/twitter.png" alt="Twitter">
+            </a>
+            <a href="">
+                <img class="bordadoRedes" src="../assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="">
+                <img class="bordadoRedes" src="../assets/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

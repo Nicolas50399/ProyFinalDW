@@ -16,13 +16,6 @@ body{
 }
 
 
-header nav ul li {
-    list-style: none;
-    display: inline;
-    font-size: medium;
-
-}
-
 .logoNav{
     display: flex;
     flex-direction: row;
@@ -37,20 +30,23 @@ header nav ul li {
 }
 
 .menu>li{
-    position: relative;
-    display: inline-block;
+    list-style: none;
 }
 
 .menu>li>a{
     text-decoration: none;
     padding: 1rem;
-    margin: 2rem;
+    margin-right: 3rem;
     line-height: 300%;
     font-size: 145%;
+    transition: all 2s;
 }
 
 .menu li a:hover{
-    color:white;
+    color:cyan;
+    padding-bottom: 5rem;
+    background-color: black;
+    
 }
 
 .submenu{
@@ -77,27 +73,34 @@ header nav ul li {
     font-size: 30px;
     width: 150px;
     height: 100px;
-    background-color: red;
+    border: 2px solid black;
     font-style: normal;
     grid-area: headerLogo;
+}
+
+.headerLogo:hover{
+    animation-name: girar_logo;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+@keyframes girar_logo {
+    0%{transform: rotateX(180deg);}
 }
 
 .headerNav{
     grid-area: headerNav;
 }
 
-header>div{
-    display: inline-block;
-}
 
 header{
-    background-image: url(https://media.istockphoto.com/photos/sport-backgrounds-soccer-stadium-picture-id951056152?k=6&m=951056152&s=170667a&w=0&h=73t3xI15oFdliWwNcJJ1MtEyvEK9p-XVecWjR-_v_bk=);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, #2e65ee, #2ec5ee);
     background-size: cover;
     font-style: italic;
     font-weight: bold;
     padding: 1rem;
-    margin: 1rem;
+    margin: 2px;
     display: grid;
     grid-template-areas:
         "headerTit headerTit headerTit headerTit headerTit"
@@ -113,6 +116,16 @@ header{
 
 .headerTit{
     grid-area: headerTit;
+    animation-name: mover_titulo;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+@keyframes mover_titulo {
+    0%{transform: translate(600px, 0px);}
+    50%{transform: translate(-200px, 0px);}
 }
 
 header h1{
@@ -124,11 +137,8 @@ header h1{
 }
 
 .bordadoBoke{
-    background-color: cyan;
-    border-top: 4px solid blue;
-    border-left: 4px solid yellow;
-    border-bottom: 4px solid blue;
-    border-right: 4px solid yellow;
+    background-color: white;
+    border: 2px solid black;
     border-radius: 1rem;
 }
 
@@ -137,9 +147,9 @@ header h1{
 }
 
 main {
-    background-image: linear-gradient(to top, #3cbb6d, cyan);
-    padding: 1rem;
-    margin: 1rem;
+    background-image: linear-gradient(to top, #8bb9ec, #8be9ec);
+    padding: 5px;
+    margin: 2px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -167,15 +177,13 @@ main section p{
 }
 
 
-textarea{
-    resize: none;
-}
+
 
 .bloqueInicio{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: ;
+    align-items: center;
 }
 
 .botonArriba{
@@ -195,6 +203,10 @@ textarea{
     overflow: auto;
     margin-top: 2rem;
     padding: 0.5rem;
+}
+
+.videos1Index:hover{
+    transform:translate(100px, 0px);
 }
 
 .vids{
@@ -224,19 +236,37 @@ textarea{
     padding: 0.5rem;
 }
 
-main section div div{
-    display: inline-block;
+.videos2Index:hover{
+    transform:translate(-100px, 0px);
 }
 
-main{
+
+
+
+.vidsIndex{
+    width: 100%;
+    height: 100%;
 }
 
 .videos{
     position: relative;
     height: 600px;
-    margin: 4rem 1rem;
+    margin: 4rem 2px;
     background-image: url("../assets/campNou.jpg");
     background-position: center;
+    animation-name: cambio_canchas;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+    animation-duration: 40s;
+    animation-delay: 0s;
+}
+
+@keyframes cambio_canchas{
+    0%{background-image: url("../assets/campNou.jpg");}
+    20%{background-image: url("../assets/maradona.jpg");}
+    40%{background-image: url("../assets/anfield.jpg");}
+    60%{background-image: url("../assets/idunaPark.jpg");}
+    80%{background-image: url("../assets/wembley.jpg");}
 }
 
 .seccionQueOfrecemos>div{
@@ -246,55 +276,52 @@ main{
     
 }
 
+#queOfrecemos{
+    margin-bottom: 3rem;
+}
+
+.ofrecemos1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.ofrecemos2{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.ofrecemos3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes aparecer{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 .ofrecemosText{
-    width: 100%;
+    width: 35%;
     flex-basis: 45%;
     flex-grow: 2;
 }
 
-#secQueOfrecemos{
-    display: grid;
-    grid-template-areas: 
-        ". . queOfrecemos queOfrecemos queOfrecemos . ."
-        "ofrecemosImg1 ofrecemosImg1 ofrecemosImg1 ofrecemosImg1 ofrecemosText1 ofrecemosText1 ofrecemosText1"
-        "ofrecemosText2 ofrecemosText2 ofrecemosText2 ofrecemosImg2 ofrecemosImg2  ofrecemosImg2 ofrecemosImg2"
-        "ofrecemosImg3 ofrecemosImg3 ofrecemosImg3 ofrecemosImg3 ofrecemosText3 ofrecemosText3 ofrecemosText3";
-    
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 10% 30% 30% 30%;
-    gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
 
-h2#queOfrecemos{
-    grid-area: queOfrecemos;
-}
-
-div#ofrecemosText1{
-    grid-area: ofrecemosText1;
-    margin-right: 5rem;
-}
-div#ofrecemosText2{
-    grid-area: ofrecemosText2;
-    margin-left: 5rem;
-}
-div#ofrecemosText3{
-    grid-area: ofrecemosText3;
-    margin-right: 5rem;
-}
-
-div#ofrecemosImg1{
-    grid-area: ofrecemosImg1;
-}
-div#ofrecemosImg2{
-    grid-area: ofrecemosImg2;
-}
-div#ofrecemosImg3{
-    grid-area: ofrecemosImg3;
-}
 
 .img1{
     width: 750px;
@@ -302,6 +329,7 @@ div#ofrecemosImg3{
 
 .img2{
     width: 750px;
+    transform: translate(-20px, 0px);
 }
 
 .img3{
@@ -309,16 +337,16 @@ div#ofrecemosImg3{
 }
 
 footer{
-    background-image: url(https://solemgardens.com/wp-content/uploads/2020/06/Canchas-de-futbol.jpg);
+    background-image: linear-gradient(to right, #2e65ee, #2ec5ee);
     background-repeat: no-repeat;
     background-size: cover;
     height: 220px;
     font-weight: bold;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 5px;
+    margin: 2px;
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: 1fr . 1fr;
 }
 
 
@@ -330,22 +358,28 @@ footer nav ul li{
 }
 
 .redes{
-    justify-self: end;
-    align-self: flex-start;
+    width: 20%;
+    align-self: flex-end;
+    justify-self: flex-end;
 }
 
 .footerLogo{
-    background-color: red;
+    border: 2px solid black;
     font-size: 30px;
     width: 150px;
     height: 100px;
     display: inline-block;
     flex-grow: 0;
     align-self: center;
+    transform: translate(30px, 50px);
 }
+
+
 
 .footerNav{
     flex-basis: 20%;
+    display: flex;
+    align-items: flex-end;
 }
 
 footer>div{
@@ -361,6 +395,11 @@ footer>div>nav>ul>li>a{
     margin-bottom: 1rem;
     color: black;
     text-decoration: none;
+}
+
+.navF{
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -391,6 +430,7 @@ footer>div>nav>ul>li>a{
     font-weight: bold;
 }
 
+
 /*Paleta de colores (sacados de coolors.co)*/
 
 .azulFluorecente{
@@ -407,6 +447,58 @@ footer>div>nav>ul>li>a{
 
 .blanco{
     color: white;
+}
+
+.color-1 {color: #8be9ec;}
+.color-2 {color: #8bb9ec;}
+.color-3 {color: #2ec5ee;}
+.color-4 {color: #2e65ee;}
+
+/*------------------------------FORMULARIOS-------------------------------------------*/
+
+.formul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+textarea{
+    resize: none;
+}
+
+form{
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+form>div{
+    margin-bottom: 2rem;
+}
+.nombre{
+    margin-top: 1rem;
+}
+
+.inputText{
+    border: 1px solid black;
+    transition: width 2s, font-size 2s;
+}
+.inputText:focus{
+    width: 200px;
+    font-size: 24px;
+    border: 3px solid cyan;
+}
+
+.inputBoton{
+    width: 110px;
+}
+.inputBoton:focus{
+    background-color: #2ec5ee;
 }
 
 /*------------------------------PAGINA NOSOTROS-------------------------------------------*/
@@ -474,6 +566,50 @@ footer>div>nav>ul>li>a{
     border: 2px solid black;
 }
 
+/*------------------------------PAGINA VISITAS-------------------------------------------*/
+
+.mapVisitas{
+    width: 80%;
+    border: 1px solid black;
+    height: 300px;
+}
+
+.visitasText{
+    width: 55%;
+}
+
+.imgVisitas{
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 1rem 0;
+}
+
+.formul{
+    grid-area: formu;
+}
+.clubesVis1{
+    grid-area: clubesV1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.clubesVis2{
+    grid-area: clubesV2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainVisitas{
+    display: grid;
+    grid-template-areas: "clubesV1 formu clubesV2";
+    grid-template-columns: 15% 70% 15%;
+    justify-content: space-evenly;
+}
+
 /*------------------------------PAGINA ESTADIOS-------------------------------------------*/
 
 .losMasGrandes{
@@ -509,6 +645,7 @@ footer>div>nav>ul>li>a{
     grid-template-rows: 400px 300px 400px 400px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .vidsArtisticos1{
@@ -536,6 +673,7 @@ footer>div>nav>ul>li>a{
     grid-template-rows: 400px 400px 400px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .vidsMiticos1{
@@ -555,6 +693,10 @@ footer>div>nav>ul>li>a{
     width: 220px;
     height: 220px;
     border: 1px solid black;
+}
+
+.estadiosText:hover{
+    transform: scale(40px, 40px);
 }
 
 .vidEstadios{
@@ -592,3 +734,295 @@ footer>div>nav>ul>li>a{
     grid-area: est8;
 }
 
+/*------------------------------MEDIA QUERIES (350 mobile 768 Tablet y 1200+ pc)--------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px){
+    /*---------------------INDEX--------------------------*/
+    .textoPpal{
+        font-size: medium;
+    }
+    .img1{
+        width: 60%;
+    }
+    .img2{
+        width: 700px;
+    }
+
+    .ofrecemosText{
+        flex-grow: 1.5;
+        font-size: medium;
+    }
+    .ofrecemos1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    /*---------------------VISITAS--------------------------*/
+
+    .imgVisitas{
+        width: 80px;
+        height: 80px;
+    }
+    .visitasText{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+    .mapVisitas{
+        height: 200px;
+        margin-bottom: 3rem;
+    }
+
+    /*---------------------ESTADIOS--------------------------*/
+    .imgEstadios{
+        width: 150px;
+        height: 150px;
+    }
+    .vidEstadios{
+        width: 250px;
+        height: 200px;
+    }
+    .estadiosText{
+        width: 220px;
+        height: 220px;
+        justify-self: center;
+    }
+    .estadiosMain>section>div>h3{
+        font-size: medium;
+    }
+
+    .losMasGrandes{
+        display: grid;
+        grid-template-areas: 
+            "estTxt est1 est2"
+            "est3 est4 est5"
+            "est6 est7 est8"
+            "vidsG vidsG vidsG";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px 300px 300px 400px;
+        gap: 0;
+        margin-bottom: 3rem;
+    }
+
+    .vidsArtisticos1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .vidsArtisticos2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    
+    .losMasMiticos{
+        display: grid;
+        grid-template-areas: 
+            "est1 est2 estTxt estTxt"
+            "est3 est4 est5 est6"
+            "vidsM1 vidsM1 vidsM1 vidsM1"
+            "vidsM2 vidsM2 vidsM2 vidsM2";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 400px 300px 400px 400px;
+    }
+
+    .vidsMiticos2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .redes{
+        width: 50%;
+        align-self: flex-start;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 350px) {
+
+/*---------------------INDEX--------------------------*/
+    
+    .textoPpal{
+        font-size: small;
+    }
+    .img1{
+        width: 60%;
+    }
+    .img2{
+        width: 700px;
+    }
+
+    .ofrecemosText{
+        flex-grow: 0;
+        font-size: medium;
+    }
+    .ofrecemos1{
+    }
+
+    /*---------------------VISITAS--------------------------*/
+
+    .imgVisitas{
+        width: 61px;
+        height: 61px;
+    }
+    .visitasText{
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .mapVisitas{
+        height: 200px;
+        margin-bottom: 3rem;
+    }
+    .tituloSecundario{
+        font-size: 200%;
+        width: 120%;
+    }
+    form{
+        width: 300px;
+    }
+    .formul{
+        margin-bottom: 3rem;
+    }
+    .footerLogo{
+        transform: translate(0,0);
+    }
+
+    .mainVisitas{
+        display: grid;
+        grid-template-areas: 
+            "formu"
+            "clubesV1"
+            "clubesV2";
+        grid-template-rows: 80% 10% 10%;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+    }
+    .clubesVis1{
+        grid-area: clubesV1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .clubesVis2{
+        grid-area: clubesV2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /*---------------------ESTADIOS--------------------------*/
+
+    header{
+        margin: 5px;
+    }
+    main{
+        margin: 5px;
+    }
+    footer{
+        margin: 5px;
+    }
+    .tituloPrincipal{
+        font-size: 300%;
+        width: 100%;
+    }
+
+    .imgEstadios{
+        width: 100px;
+        height: 100px;
+    }
+    .vidEstadios{
+        width: 200px;
+        height: 180px;
+    }
+    .estadiosText{
+        width: 220px;
+        height: 160px;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .estadiosMain>section>div>h3{
+        font-size: small;
+    }
+    
+    .losMasGrandes{
+        display: grid;
+        grid-template-areas: 
+            "estTxt estTxt"
+            "est1 est2"
+            "est3 est4"
+            "est5 est6"
+            "est7 est8"
+            "vidsG vidsG";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 250px 250px 250px 250px 400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vidsGrandes{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .losMasArtisticos{
+        display: grid;
+        grid-template-areas: 
+            "estTxt estTxt"
+            "est1 est2"
+            "est3 est4"
+            "est5 est6"
+            "vidsA1 vidsA1"
+            "vidsA2 vidsA2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px repeat(3, 250px) repeat(2, 580px);
+        justify-content: center;
+        align-items: center;
+    }
+    .vidsArtisticos1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .losMasMiticos{
+        display: grid;
+        grid-template-areas: 
+            "estTxt estTxt"
+            "est1 est2"
+            "est3 est4"
+            "est5 est6"
+            "vidsM1 vidsM1"
+            "vidsM2 vidsM2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px repeat(3, 250px) 300px 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes{
+        width: 60%;
+    }
+    .footerNav{
+        width: 20%;
+    }
+    .menu>li>a{
+        text-decoration: none;
+        padding: 0;
+        margin: 2rem;
+        line-height: 300%;
+        font-size: 100%;
+    }
+
+
+    
+}

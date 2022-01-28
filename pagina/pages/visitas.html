@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,24 +59,44 @@
             <h3 class="tituloTerciario">Estadios disponibles</h3>
             <iframe class="mapVisitas" src="" frameborder="0"></iframe>
             <h2 class="tituloTerciario">¡Llená el formulario!</h2>
-            <form action="" method="get" enctype="text/plain">
+            <form class="container" action="" method="get" enctype="text/plain">
                 <fieldset>
                     <legend>Visitas</legend>
-                    <label for="infoPersonal">Nombre:</label>
-                    <input class="inputText" type="text" name="userName" id="infoPersonal" placeholder="Nombre" required>
-                    <br><br>
-                    <label for="infoPersonal">Apellido:</label>
-                    <input class="inputText" type="text" name="userLastName" id="infoPersonal" placeholder="Apellido" required>
-                    <br><br>
-                    <label for="infoPersonal">Email:</label>
-                    <input class="inputText" type="email" name="userMail" id="infoPersonal" placeholder="Email" required>
-                    <br><br>
-                    <label for="">Tipo de visita:</label>
-                    <input type="radio" name="tipoVisita" id="" value="tour" required>Tour
-                    <input type="radio" name="tipoVisita" id="" value="partido" required>Partido
-                    <br><br>
-                    <label for="estadio">Pais del estadio:</label>
-                    <select name="userPaisEstadio" id="userCountryStadium" required>
+
+                    
+                </fieldset>
+                
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@cuenta.com">
+                  </div>
+                <div class="row">
+                    <p class="col-xl-6">Tipo de visita:</p>
+                    <div class="form-check col-xl-3">  
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Tour
+                        </label>
+                    </div>
+                    <div class="form-check col-xl-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Partido
+                        </label>
+                    </div>
+                </div>
+                <div class="">
+                    <label for="inputState" class="form-label">País del estadio</label>
+                    <select id="inputState" class="form-select">
                         <option value="" disabled selected>Seleccione Pais</option>
                         <option value="argentina">Argentina</option>
                         <option value="brasil">Brasil</option>
@@ -84,23 +105,28 @@
                         <option value="italia">Italia</option>
                         <option value="qatar">Qatar</option>
                     </select>
-                    <br><br>
-                    
-                    <label for="start">Fecha de visita:</label>
-        
+                </div>
+
+                <label for="start">Fecha de visita:</label>
                     <input type="date" id="start" name="trip-start"
                     value="2022-01-01"
                     min="2022-01-01" max="2024-12-31">
-                    <br><br>
-                    <label for="infoPersonal">¿Querés agregar algo?</label>
-                    <br>
-                    <textarea class="inputText" name="" id="" cols="35" rows="9" maxlength="300" placeholder="Notas del pedido (max 300 caracteres)"></textarea>
-                    <br><br>
-                    <label for="condition">No soy un robot</label>
-                    <input type="checkbox" name="mandatory" id="condition" value="1" required>
-                    <input class="inputBoton" type="submit" value="Enviar">
-                    <input class="inputBoton" type="reset" value="Reset">
-                </fieldset>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">¿Querés agregar algo?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10" maxlength="300" placeholder="Sugerencias (max 300 caracteres)"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      No soy un robot
+                    </label>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary col-xl-6">Enviar</button>
+                    <button type="reset" class="btn btn-light col-xl-6">Reset</button>
+                </div>
+
             </form>
         </section>
         
@@ -138,5 +164,6 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

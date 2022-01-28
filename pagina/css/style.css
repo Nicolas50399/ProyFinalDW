@@ -93,6 +93,9 @@ body{
     grid-area: headerNav;
 }
 
+.navBar{
+}
+
 
 header{
     background-image: linear-gradient(to left, #2e65ee, #2ec5ee);
@@ -205,13 +208,10 @@ main section p{
     padding: 0.5rem;
 }
 
-.videos1Index:hover{
-    transform:translate(100px, 0px);
-}
-
 .vids{
     display: flex;
     flex-direction: column;
+    list-style: none;
 }
 
 .primero{
@@ -236,10 +236,6 @@ main section p{
     padding: 0.5rem;
 }
 
-.videos2Index:hover{
-    transform:translate(-100px, 0px);
-}
-
 
 
 
@@ -252,14 +248,17 @@ main section p{
     position: relative;
     height: 600px;
     margin: 4rem 2px;
+    /*
     background-image: url("../assets/campNou.jpg");
     background-position: center;
     animation-name: cambio_canchas;
     animation-iteration-count: infinite;
     animation-timing-function:ease-out;
     animation-duration: 40s;
-    animation-delay: 0s;
+    animation-delay: 0s;*/
 }
+
+/*
 
 @keyframes cambio_canchas{
     0%{background-image: url("../assets/campNou.jpg");}
@@ -267,7 +266,7 @@ main section p{
     40%{background-image: url("../assets/anfield.jpg");}
     60%{background-image: url("../assets/idunaPark.jpg");}
     80%{background-image: url("../assets/wembley.jpg");}
-}
+}*/
 
 .seccionQueOfrecemos>div{
     background-size: cover;
@@ -612,8 +611,10 @@ form>div{
 
 /*------------------------------PAGINA ESTADIOS-------------------------------------------*/
 
+
 .losMasGrandes{
     border-top: 4px solid black;
+    /*
     display: grid;
     grid-template-areas: 
         "estTxt estTxt est1 est2 est3"
@@ -622,7 +623,7 @@ form>div{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 400px 300px 400px;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem;*/
 }
 
 .vidsGrandes{
@@ -634,6 +635,7 @@ form>div{
 
 .losMasArtisticos{
     border-top: 4px solid black;
+    /*
     display: grid;
     grid-template-areas: 
         "est1 estTxt estTxt est2"
@@ -645,7 +647,7 @@ form>div{
     grid-template-rows: 400px 300px 400px 400px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem;*/
 }
 
 .vidsArtisticos1{
@@ -663,6 +665,7 @@ form>div{
 
 .losMasMiticos{
     border-top: 4px solid black;
+    /*
     display: grid;
     grid-template-areas: 
         "est1 est2 est3 estTxt estTxt"
@@ -674,6 +677,7 @@ form>div{
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+    */
 }
 
 .vidsMiticos1{
@@ -707,6 +711,7 @@ form>div{
 
 .estadiosText{
     grid-area: estTxt;
+    
 }
 
 .estadio1{
@@ -785,15 +790,16 @@ form>div{
         height: 200px;
     }
     .estadiosText{
+        /*
         width: 220px;
-        height: 220px;
+        height: 220px;*/
         justify-self: center;
     }
     .estadiosMain>section>div>h3{
         font-size: medium;
     }
-
-    .losMasGrandes{
+    
+    .losMasGrandes{/*
         display: grid;
         grid-template-areas: 
             "estTxt est1 est2"
@@ -802,7 +808,7 @@ form>div{
             "vidsG vidsG vidsG";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 400px 300px 300px 400px;
-        gap: 0;
+        gap: 0;*/
         margin-bottom: 3rem;
     }
 
@@ -816,7 +822,7 @@ form>div{
         flex-wrap: wrap;
         gap: 3rem;
     }
-    
+    /*
     .losMasMiticos{
         display: grid;
         grid-template-areas: 
@@ -826,7 +832,7 @@ form>div{
             "vidsM2 vidsM2 vidsM2 vidsM2";
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 400px 300px 400px 400px;
-    }
+    }*/
 
     .vidsMiticos2{
         display: flex;

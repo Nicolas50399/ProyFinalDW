@@ -1,0 +1,109 @@
+.index{
+    &__videos{
+        position: relative;
+        @include sizes(100%, 600px);
+        margin: 4rem 2px;
+
+        &__bloqueInicio{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            &__vids1{
+                background-color: black;
+                @include sizes(20%, 500px);
+                overflow: auto;
+                margin-top: 2rem;
+                padding: 0.5rem;
+            }
+            
+            &__vids2{
+                @extend .index__videos__bloqueInicio__vids1;
+            }
+
+            .vids{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+
+                .vidsIndex{
+                    @include sizes(100%, 100%);
+                }
+            }
+            
+            .primero{
+                order: 1;
+            }
+            .segundo{
+                order: 2;
+            }
+            .tercero{
+                order: 3;
+            }
+            .cuarto{
+                order: 4;
+            }
+        }
+    }
+
+    &__seccionQueOfrecemos{
+        >div{
+            background-size: cover;
+            background-position: bottom;
+            margin-bottom: 100px;
+        }
+
+        #queOfrecemos{
+            margin-bottom: 3rem;
+        }
+
+        &__of1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            animation-name: aparecer;
+            animation-duration: 2s;
+
+            &__im1{
+                width: 750px;
+            }
+        }
+        
+        &__of2{
+            @extend .index__seccionQueOfrecemos__of1;
+            flex-direction: row-reverse;
+            
+            &__im2{
+                @extend .index__seccionQueOfrecemos__of1__im1;
+                transform: translate(-20px, 0px);
+            }
+        }
+        
+        &__of3{
+            @extend .index__seccionQueOfrecemos__of1;
+
+            
+            &__im3{
+                @extend .index__seccionQueOfrecemos__of1__im1;
+            }
+        }
+
+        .ofrecemosText{
+            width: 35%;
+            flex-basis: 45%;
+            flex-grow: 2;
+        }
+
+    }
+
+
+    @keyframes aparecer{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    
+}
+

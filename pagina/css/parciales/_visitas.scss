@@ -1,0 +1,46 @@
+.visitas{
+    display: grid;
+    grid-template-areas: "clubesV1 formu clubesV2";
+    grid-template-columns: 15% 70% 15%;
+    justify-content: space-evenly;
+
+    &__formul{
+        grid-area: formu;
+
+        &__text{
+            width: 100%;
+        }
+
+        &__map{
+            @include sizes(80%, 300px);
+            @include bordado(1px solid black);
+        }
+        
+        
+    }
+
+    &__clubes1{
+        grid-area: clubesV1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__imgs{
+            @include bordado(1px solid black);
+            @include sizes(150px, 150px);
+            width: 150px;
+            height: 150px;
+            margin: 1rem 0;
+        }
+    }
+
+    &__clubes2{
+        @extend .visitas__clubes1;
+        grid-area: clubesV2;
+
+        &__imgs{
+            @extend .visitas__clubes1__imgs;
+        }
+    }
+}

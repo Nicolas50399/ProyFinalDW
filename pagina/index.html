@@ -1,190 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <!--<link href="./css/style.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body class="">
-    <header class="container-fluid">
+    <header class="container-fluid bg--headr padding-5">
         <h1 class="headerTit">INICIO</h1>
-        <div class="headerLogo">
+        <!--<div class="headerLogo">
             <img src="" alt="">LOGO
-        </div>
-        <div class="navBar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        </div>-->
+        <div class="headerNav">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg logo">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Menu</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/quienesSomos.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/estadios.html">Estadios</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/visitas.html">Visitas</a>
-                      </li>
-                    </ul>
-                  </div>
+                    <div class="container-fluid logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="" alt="" width="150" height="100" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/quienesSomos.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/estadios.html">Estadios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contacto
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./pages/contacto.html">Sugerencias</a></li>
+                                    <li><a class="dropdown-item" href="./pages/visitas.html">Visitas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </nav>
+            </nav>
         </div>
     </header>
 
 
 
-    <main>
+    <main class="index bg--main padding-8">
         <section class="lead">
             <h1 class="tituloPrincipal ">Estadios por el Mundo</h1>
-            <p class="textoPpal negrita">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad distinctio nisi ratione, dolorem ex sunt placeat ut dignissimos voluptatibus sint minus nam nihil reprehenderit error dolor autem incidunt unde alias.</p>    
+            <p class="textoPpal negrita">La mejor página dedicada a estadios de futbol, acá vas a poder apreciar
+                historia, imágenes y videos de estadios por todo el planeta, asi como también visitar algunos
+                seleccionados. Si sos un fanático del deporte o de la belleza de las construcciones, ¡este es tu sitio!
+            </p>
         </section>
-        
 
 
-          
-        <section class="videos container-fluid">
-            <div class="bloqueInicio row">
-                <div class="videos1Index col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
+
+
+        <section class="index__videos container-fluid">
+            <div class="index__videos__bloqueInicio row">
+                <div class="index__videos__bloqueInicio__vids1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
                     <ul class="vids container-fluid">
                         <li class="tercero">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/egUEf5Xcgac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/egUEf5Xcgac"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                         <li class="primero">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/OKw0kGEGVTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/OKw0kGEGVTQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                         <li class="cuarto">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/_nIvIZSki_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/_nIvIZSki_M"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                         <li class="segundo">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/s3WNUVemJak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/s3WNUVemJak"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                     </ul>
                 </div>
 
 
-                <div id="carouselExampleControls" class="carousel slide col-xl-7 col-lg-7 col-md-4 col-sm-4 col-xs-4" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-4"
+                    data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/campNou.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
+                        </div>
+                        <div class="carousel-item">
                             <img src="./assets/maradona.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
+                        </div>
+                        <div class="carousel-item">
                             <img src="./assets/anfield.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
+                        </div>
+                        <div class="carousel-item">
                             <img src="./assets/wembley.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
+                        </div>
+                        <div class="carousel-item">
                             <img src="./assets/idunaPark.jpg" class="d-block w-100" alt="...">
-                          </div>
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
 
 
-                <div class="videos2Index col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
+                <div class="index__videos__bloqueInicio__vids2 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
                     <ul class="vids container-fluid">
                         <li class="cuarto">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/2UDJqcI9Nus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/2UDJqcI9Nus"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                         <li class="tercero">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/jHzTESr_En0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/jHzTESr_En0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                         <li class="primero">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/jnbQBPFfCr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/jnbQBPFfCr0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                         <li class="segundo">
-                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/u0nK5j57O-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="vidsIndex" src="https://www.youtube.com/embed/u0nK5j57O-o"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        
-        <section class="seccionQueOfrecemos container-fluid">
+
+        <section class="index__seccionQueOfrecemos container-fluid">
 
             <h2 id="queOfrecemos" class="tituloSecundario lead">¿Qué ofrecemos?</h2>
 
-            <div data-aos="fade-right" class="ofrecemos1 row">
-                <div class="img1 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./assets/canchas.png" alt="">
+            <div data-aos="fade-right" class="index__seccionQueOfrecemos__of1 row">
+                <div class="index__seccionQueOfrecemos__of1__im1 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <img class="im1" src="./assets/canchas.png" alt="">
                 </div>
-                <div class="ofrecemosText col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="ofrecemosText col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <h3 class="tituloTerciario">¡Apreciá capturas y videos de estadios en el mundo!</h3>
-                    <p class="negrita">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad distinctio nisi ratione, dolorem ex sunt placeat ut dignissimos voluptatibus sint minus nam nihil reprehenderit error dolor autem incidunt unde alias.</p>
+                    <p class="negrita">En nuestra sección "Estadios" te mostramos los escenarios clasificados por los
+                        mas grandes (los de mayor capacidad), los mas artísticos (con construcciones o paisajes
+                        particulares) y los mas míticos (los que tienen mayor historia futbolística).</p>
                 </div>
             </div>
-            <div data-aos="fade-left" class="ofrecemos2 row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img class="img2" src="./assets/bernabeuInstal.jpg" alt="">
+            <div data-aos="fade-right" class="index__seccionQueOfrecemos__of2 row">
+                <div class="index__seccionQueOfrecemos__of2__im2 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <img class="im2" src="./assets/bernabeuInstal.jpg" alt="">
                 </div>
-                <div class="ofrecemosText col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="ofrecemosText col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <h3 class="tituloTerciario">¡Realizá un tour por cada uno de estos estadios!</h3>
-                    <p class="negrita">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad distinctio nisi ratione, dolorem ex sunt placeat ut dignissimos voluptatibus sint minus nam nihil reprehenderit error dolor autem incidunt unde alias.</p>
+                    <p class="negrita">Si te interesa conocer más a fondo alguno de estos estadios ¡te damos la
+                        posibilidad de que realices recorridos turísticos en ellos! Podés conocer sus museos,
+                        instalaciones, tribunas, campo de juego y muchas cosas más!</p>
                 </div>
             </div>
-            <div data-aos="fade-right" class="ofrecemos3 row">
-                <div class="img3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <img src="./assets/parquePrincipes.jpg" alt="">
+            <div data-aos="fade-right" class="index__seccionQueOfrecemos__of3 row">
+                <div class="index__seccionQueOfrecemos__of3__im3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <img class="im3" src="./assets/parquePrincipes.jpg" alt="">
                 </div>
-                <div class="ofrecemosText col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="ofrecemosText col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <h3 class="tituloTerciario">¿Querés vivir un partido en algun estadio? ¡Conseguí tu entrada!</h3>
-                <p class="negrita">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad distinctio nisi ratione, dolorem ex sunt placeat ut dignissimos voluptatibus sint minus nam nihil reprehenderit error dolor autem incidunt unde alias.</p>
+                    <p class="negrita">Te invitamos a disfrutar al máximo un estadio de fútbol, a través de nosotros
+                        podés ir a tu estadio favorito para vivir a pleno las emociones de un partido en el: podés
+                        disfrutar tanto del partido como de la aficion del equipo, ambiente en los alrededores y el
+                        mejor recibimiento por parte de las autoridades de cada uno de ellos.</p>
                 </div>
             </div>
-        
+
         </section>
     </main>
 
 
-    <footer class="container-fluid">
+    <footer class="container-fluid bg--footr padding-5">
         <div class="footerLogo">
             <img src="" alt="">LOGO
         </div>
         <div class="redes">
             <a href="">
-                <img class="youtube bordadoRedes" src="./assets/youtube.png" alt="Youtube">
+                <img class="youtube bordadoRedes btn--youtube" src="./assets/youtube.png" alt="Youtube">
             </a>
             <a href="">
-                <img class="bordadoRedes" src="./assets/twitter.png" alt="Twitter">
+                <img class="bordadoRedes btn--twitter" src="./assets/twitter.png" alt="Twitter">
             </a>
             <a href="">
                 <img class="bordadoRedes" src="./assets/facebook.png" alt="Facebook">
             </a>
             <a href="">
-                <img class="bordadoRedes" src="./assets/instagram.png" alt="Instagram">
+                <img class="bordadoRedes btn--instagram" src="./assets/instagram.png" alt="Instagram">
             </a>
         </div>
     </footer>
     <script>
         AOS.init();
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

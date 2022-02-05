@@ -1,0 +1,66 @@
+.nosotros{
+    display: flex;
+
+    section{
+        margin-bottom: 5rem;
+    }
+
+    &__1{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &__imgMap{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            &__img{
+                @include sizes(400px, 400px);
+                @include bordado(2px solid black);
+            }
+            
+            &__map{
+                @extend .nosotros__1__imgMap__img;
+            }
+        }
+
+        
+    }
+    
+    &__2{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__3{
+        @extend .nosotros__2;
+        flex-flow: row-reverse nowrap;
+    }
+    
+    &__4{
+        @extend .nosotros__2;
+    }
+
+    .nosotrosText{
+        flex-basis: 100%;
+    }
+    
+    .imgNos{
+        @include sizes(500px, 500px);
+        @include bordado(2px solid black);
+    }
+}
+
+
+
+
+
+
+
+
+

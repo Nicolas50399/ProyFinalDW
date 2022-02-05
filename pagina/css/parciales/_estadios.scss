@@ -1,0 +1,85 @@
+.estadios{
+    &__grandes{
+        border-top: 4px solid black;
+
+        &__vids{
+            grid-area: vidsG;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2rem 0;
+        }
+
+        .estadio7{
+            grid-area: est7;
+        }
+        .estadio8{
+            grid-area: est8;
+        }
+    }
+
+    &__artisticos{
+        border-top: 4px solid black;
+
+        &__vids1{
+            grid-area: vidsA1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+        &__vids2{
+            @extend .estadios__artisticos__vids1;
+            grid-area: vidsA2;
+        }
+    }
+
+    &__miticos{
+        border-top: 4px solid black;
+
+        &__vids1{
+            @extend .estadios__artisticos__vids1;
+            grid-area: vidsM1;
+        }
+        &__vids2{
+            @extend .estadios__artisticos__vids1;
+            grid-area: vidsM2;
+        }
+    }
+
+    .imgEstadios{
+        @include sizes(220px, 220px);
+    }
+    
+    .estadiosText:hover{
+        transform: scale(40px, 40px);
+    }
+    
+    .vidEstadios{
+        @include sizes(350px, 300px);
+    }
+    
+    .estadiosText{
+        grid-area: estTxt;
+        
+    }
+    
+    .estadio1{
+        grid-area: est1;
+    }
+    .estadio2{
+        grid-area: est2;
+    }
+    .estadio3{
+        grid-area: est3;
+    }
+    .estadio4{
+        grid-area: est4;
+    }
+    .estadio5{
+        grid-area: est5;
+    }
+    .estadio6{
+        grid-area: est6;
+    }
+}

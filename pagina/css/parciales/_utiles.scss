@@ -1,0 +1,46 @@
+.tituloPrincipal{
+    font-size: 550%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.tituloSecundario{
+    font-size: 300%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tituloTerciario{
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.bordadoBoke{
+    background-color: white;
+    @include bordado(2px solid black);
+    border-radius: 2rem;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.bordadoRedes{
+    @include bordado(2px solid black);
+    border-radius: 2rem;
+    width: 20%;
+}
+
+.youtube{
+    width: 27%;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+
+
+.negrita{
+    font-weight: bold;
+}

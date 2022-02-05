@@ -1,0 +1,385 @@
+/*------------------------------MEDIA QUERIES (350 mobile 768 Tablet y 1200+ pc)--------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px){
+
+    .redes{
+        width: 40%;
+    }
+
+    /*---------------------INDEX--------------------------*/
+
+    .tituloPrincipal{
+        font-size: 400%;
+    }
+
+
+    .index__videos__bloqueInicio__vids1{
+        @include sizes(100%, 200px);
+        margin-bottom: 2rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .index__videos__bloqueInicio__vids1 .vids{
+        width: 200%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .index__seccionQueOfrecemos__of1__im1{
+        width: 400px;
+        transform: translate(-12px, 0);
+    }
+
+    .ofrecemosText{
+        width: 500px;
+    }
+    
+    #queOfrecemos{
+        margin-top: 20rem;
+    }
+    .index__seccionQueOfrecemos .ofrecemosText{
+        width: 80%;
+        flex-grow: 1.5;
+        font-size: medium;
+    }
+    .index__seccionQueOfrecemos__of1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    body{
+        background-color: red;
+        overflow-x:hidden;
+    }
+
+    /*---------------------NOSOTROS--------------------------*/
+
+    .nosotros__1__imgMap__img{
+        @include sizes(300px, 300px);
+    }
+
+    .nosotros .imgNos{
+        @include sizes(350px, 350px);
+    }
+
+    /*---------------------VISITAS--------------------------*/
+
+    .visitas__clubes1__imgs{
+        @include sizes(80px, 80px);
+    }
+    .visitas__formul__text{
+        @include margin(0 0 3rem 0);
+    }
+    .visitas__formul__map{
+        @include sizes(100%, 200px);
+        @include margin(0 0 3rem 0);
+    }
+
+    /*---------------------ESTADIOS--------------------------*/
+    .imgEstadios{
+        @include sizes(150px, 150px);
+    }
+    .vidEstadios{
+        @include sizes(250px, 250px);
+    }
+    .estadiosText{
+        /*
+        width: 220px;
+        height: 220px;*/
+        justify-self: center;
+    }
+    .estadiosMain>section>div>h3{
+        font-size: medium;
+    }
+    
+    .losMasGrandes{/*
+        display: grid;
+        grid-template-areas: 
+            "estTxt est1 est2"
+            "est3 est4 est5"
+            "est6 est7 est8"
+            "vidsG vidsG vidsG";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px 300px 300px 400px;
+        gap: 0;*/
+        margin-bottom: 3rem;
+    }
+
+    .vidsArtisticos1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .vidsArtisticos2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    /*
+    .losMasMiticos{
+        display: grid;
+        grid-template-areas: 
+            "est1 est2 estTxt estTxt"
+            "est3 est4 est5 est6"
+            "vidsM1 vidsM1 vidsM1 vidsM1"
+            "vidsM2 vidsM2 vidsM2 vidsM2";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 400px 300px 400px 400px;
+    }*/
+
+    .vidsMiticos2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .redes{
+        width: 50%;
+        align-self: flex-start;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 350px) {
+
+    body{
+        background-color: blue;
+        padding: 0;
+        margin: 0;
+        overflow-x:hidden;
+    }
+
+    .redes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes > a{
+        width: 150%;
+        transform: translate(50px, -60px);
+    }
+
+/*---------------------INDEX--------------------------*/
+    
+    .textoPpal{
+        font-size: medium;
+    }
+    .index__seccionQueOfrecemos__of1__im1{
+        width: 50px;
+    }
+
+    .im1{
+        width: 300px;
+        transform: translate(0px, -140px);
+    }
+    .im2{
+        width: 300px;
+        transform: translate(0px, -90px);
+    }
+    .im3{
+        width: 300px;
+        transform: translate(0px, -170px);
+    }
+
+    #queOfrecemos{
+        margin-top: 0;
+    }
+
+    .ofrecemosText{
+        transform: translate(-20px, 120px);
+        font-size: small;
+        margin-top: 4rem;
+    }
+
+
+    /*---------------------NOSOTROS--------------------------*/
+
+    .nosotros__1__imgMap{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .nosotros__1__imgMap__img{
+        @include sizes(200px, 200px);
+    }
+
+    .nosotros .imgNos{
+        @include sizes(150px, 150px);
+    }
+
+    .nosotros__2{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    /*---------------------VISITAS--------------------------*/
+
+    .visitas__clubes1__imgs{
+        @include sizes(61px, 61px);
+    }
+    .visitas__formul__text{
+        @include margin(0 0 3rem 0);
+    }
+    .visitas__formul__map{
+        @include sizes(100%, 200px);
+        @include margin(0 0 3rem 0);
+    }
+    .tituloSecundario{
+        @include fuente(200%);
+    }
+    form{
+        @include sizes(300px, 100%);
+    }
+    .formul{
+        @include margin(0 0 3rem 0);
+    }
+    .footerLogo{
+        @include transform(translate(0,0));
+    }
+
+    .visitas{
+        @include visitas(grid, "formu" "clubesV1" "clubesV2", 80% 10% 10%, 1fr, space-evenly);
+    }
+    .visitas__clubes1{
+        @include visitasClubes(clubesV1, flex, row, wrap, space-evenly, center);
+        @include margin(3rem 0 0 0);
+    }
+    .visitas__clubes2{
+        @include visitasClubes(clubesV2, flex, row, wrap, space-evenly, center);
+    }
+    header .menu >li > a{
+        @include fuente(small);
+        @include padding(1px);
+        @include margin(0);
+    }
+
+    .menu{
+        @include flexflow(column, wrap);
+    }
+
+    .formVis{
+        height: 1100px;
+    }
+
+    /*---------------------ESTADIOS--------------------------*/
+
+    header{
+        margin: 1px;
+        padding: 0px;
+    }
+    main{
+        margin: 1px;
+        padding: 0px;
+    }
+    footer{
+        margin: 1px;
+        padding: 0px;
+    }
+    .tituloPrincipal{
+        font-size: 300%;
+        width: 100%;
+    }
+
+    .estadio1{
+        transform: translate(-50px, 0px);
+    }
+
+    .imgEstadios{
+        @include sizes(100px, 100px);
+    }
+    .vidEstadios{
+        @include sizes(200px, 180px);
+    }
+    .estadiosText{
+        @include sizes(220px, 160px);
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .estadiosMain>section>div>h3{
+        font-size: small;
+    }
+    
+    .losMasGrandes{
+        display: grid;
+        grid-template-areas: 
+            "estTxt estTxt"
+            "est1 est2"
+            "est3 est4"
+            "est5 est6"
+            "est7 est8"
+            "vidsG vidsG";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 250px 250px 250px 250px 400px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vidsGrandes{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .losMasArtisticos{
+        display: grid;
+        grid-template-areas: 
+            "estTxt estTxt"
+            "est1 est2"
+            "est3 est4"
+            "est5 est6"
+            "vidsA1 vidsA1"
+            "vidsA2 vidsA2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px repeat(3, 250px) repeat(2, 580px);
+        justify-content: center;
+        align-items: center;
+    }
+    .vidsArtisticos1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .losMasMiticos{
+        display: grid;
+        grid-template-areas: 
+            "estTxt estTxt"
+            "est1 est2"
+            "est3 est4"
+            "est5 est6"
+            "vidsM1 vidsM1"
+            "vidsM2 vidsM2";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px repeat(3, 250px) 300px 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes{
+        width: 60%;
+    }
+    .footerNav{
+        width: 20%;
+    }
+
+    .footerLogo{
+        width: 50%;
+    }
+    .menu>li>a{
+        text-decoration: none;
+        padding: 0;
+        margin: 2rem;
+        line-height: 300%;
+        font-size: 100%;
+    }
+
+
+    
+}

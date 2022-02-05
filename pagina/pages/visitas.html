@@ -6,60 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visitas</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <!--<link href="./css/style.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
+    <header class="bg--headr padding-5">
         <h1 class="headerTit ">VISITAS</h1>
-        <div class="headerLogo">
-            <img src="" alt="">LOGO
-        </div>
         <div class="headerNav">
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="../index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="quienesSomos.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="estadios.html">ESTADIOS</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="#">VISITAS</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg logo">
+                <div class="container-fluid">
+                    <div class="container-fluid logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="" alt="" width="150" height="100" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quienesSomos.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="estadios.html">Estadios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contacto
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="contacto.html">Sugerencias</a></li>
+                                    <li><a class="dropdown-item active" href="#">Visitas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
-    <main class="mainVisitas">
+    <main class="visitas bg--main padding-8">
 
-        <section class="clubesVis1">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
+        <section class="visitas__clubes1">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/boca.png" alt="">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/liverpool.png" alt="">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/saopaulo.png" alt="">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/realmadrid.png" alt="">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/bayern.png" alt="">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/milan.png" alt="">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/chelsea.png" alt="">
+            <img class="visitas__clubes1__imgs" src="../assets/escudos/psg.png" alt="">
         </section>
 
-        <section class="formul">
+        <section class="visitas__formul">
             <h1 class="tituloPrincipal">Tours y Entradas</h1>
             <h2 class="tituloSecundario">¡Viajá a tu estadio favorito!</h2>
-            <p class="negrita visitasText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum maiores omnis voluptas placeat explicabo quos quis quae nesciunt commodi perspiciatis fuga excepturi, at nihil saepe quod voluptate neque id ullam.
-            Sequi tempore aliquam excepturi minima suscipit animi, quasi, id architecto labore autem, quia nihil? Ipsum aliquam necessitatibus amet repellat. Quos sunt odit optio magni commodi qui eaque earum amet recusandae.
-            Vero nobis facilis quod aliquam sed earum blanditiis delectus, dignissimos ipsa minus qui nam voluptas? Enim reiciendis sit, voluptates odio mollitia rem, optio unde omnis eligendi, voluptatibus consequuntur dolorum officia?</p>
+            <p class="negrita visitas__formul__text">A continuación, te mostramos todos los estadios de los clubes en los cuales tenemos asociaciones para coordinar viajes turisticos. La gran mayoría de los estadios disponibles se encuentran en América y Europa, con la excepcion de Qatar, pensando en una posible venta futura de entradas para partidos del mundial que se está por venir. Toda la información sobre la localización de cada uno de estos lugares, la tenés en el mapa de abajo. Al completar el formulario, a mas tardar en una semana vas a estar recibiendo vía mail toda la información acerca del viaje turístico elegido. También en ese mail aparece la informacion de pago por los servicios. ¿Qué estás esperando? ¡Pedí tu entrada y disfruta a pleno de tu estadio mas deseado!</p>
             <h3 class="tituloTerciario">Estadios disponibles</h3>
-            <iframe class="mapVisitas" src="" frameborder="0"></iframe>
+            <iframe class="visitas__formul__map" src="" frameborder="0"></iframe>
             <h2 class="tituloTerciario">¡Llená el formulario!</h2>
-            <form class="container" action="" method="get" enctype="text/plain">
+            <form class="container formVis" action="" method="get" enctype="text/plain">
                 <fieldset>
                     <legend>Visitas</legend>
 
@@ -130,22 +144,22 @@
             </form>
         </section>
         
-        <section class="clubesVis2">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
-            <img class="imgVisitas" src="" alt="">
+        <section class="visitas__clubes2">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/river.png" alt="">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/manutd.png" alt="">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/palmeiras.png" alt="">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/barcelona.png" alt="">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/dortmund.png" alt="">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/juventus.png" alt="">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/arsenal.png" alt="">
+            <img class="visitas__clubes2__imgs" src="../assets/escudos/marsella.png" alt="">
         </section>
 
         
         
     </main>
     
-    <footer>
+    <footer class="bg--footr padding-5">
         <div class="footerLogo">
             <img src="" alt="">LOGO
         </div>

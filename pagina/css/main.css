@@ -1,0 +1,1310 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Roboto:ital@1&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 350px auto 200px;
+      grid-template-rows: 350px auto 200px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: stretch;
+  overflow-x: hidden;
+}
+
+.tituloPrincipal {
+  font-size: 550%;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.tituloSecundario {
+  font-size: 300%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tituloTerciario {
+  font-size: 150%;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.bordadoBoke {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 2rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.bordadoRedes {
+  border: 2px solid black;
+  border-radius: 2rem;
+  width: 20%;
+}
+
+.youtube {
+  width: 27%;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.color-1 {
+  color: #8be9ec;
+}
+
+.color-2 {
+  color: #8bb9ec;
+}
+
+.color-3 {
+  color: #2ec5ee;
+}
+
+.color-4 {
+  color: #2e65ee;
+}
+
+.color-5 {
+  color: white;
+}
+
+.color-6 {
+  color: black;
+}
+
+.color-7 {
+  color: cyan;
+}
+
+header {
+  background-size: cover;
+  font-style: italic;
+  font-weight: bold;
+  margin: 2px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "headerTit" "headerNav";
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-size: 350%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .headerNav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: headerNav;
+}
+
+header .headerTit {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: headerTit;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-name: mover_titulo;
+          animation-name: mover_titulo;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menu > li {
+  list-style: none;
+}
+
+header .menu > li > a {
+  text-decoration: none;
+  padding: 1rem;
+  margin-right: 3rem;
+  line-height: 300%;
+  font-size: 145%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+header .menu > li > a:hover {
+  color: cyan;
+  padding-bottom: 5rem;
+  background-color: black;
+}
+
+@-webkit-keyframes mover_titulo {
+  0% {
+    -webkit-transform: translate(600px, 0px);
+            transform: translate(600px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(-200px, 0px);
+            transform: translate(-200px, 0px);
+  }
+}
+
+@keyframes mover_titulo {
+  0% {
+    -webkit-transform: translate(600px, 0px);
+            transform: translate(600px, 0px);
+  }
+  50% {
+    -webkit-transform: translate(-200px, 0px);
+            transform: translate(-200px, 0px);
+  }
+}
+
+@-webkit-keyframes girar_logo {
+  0% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+
+@keyframes girar_logo {
+  0% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+}
+
+footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  width: 100%;
+  font-weight: bold;
+  margin: 2px;
+  text-align: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+footer > div {
+  margin-right: 50px;
+}
+
+footer .redes {
+  width: 30%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+}
+
+footer .footerLogo {
+  border: 2px solid black;
+  font-size: 30px;
+  height: 100px;
+  width: 150px;
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translate(30px, 50px);
+          transform: translate(30px, 50px);
+}
+
+main {
+  margin: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section p {
+  color: black;
+}
+
+form {
+  border-radius: 1rem;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+form > div {
+  margin-bottom: 2rem;
+}
+
+form textarea {
+  resize: none;
+}
+
+form .inputText {
+  border: 1px solid black;
+  -webkit-transition: width 2s, font-size 2s;
+  transition: width 2s, font-size 2s;
+}
+
+form .inputText:focus {
+  width: 200px;
+  font-size: 24px;
+  border: 3px solid cyan;
+}
+
+form .inputBoton {
+  width: 110px;
+}
+
+form .inputBoton:focus {
+  background-color: #2ec5ee;
+}
+
+.formul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index__videos {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin: 4rem 2px;
+}
+
+.index__videos__bloqueInicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index__videos__bloqueInicio__vids1, .index__videos__bloqueInicio__vids2 {
+  background-color: black;
+  height: 500px;
+  width: 20%;
+  overflow: auto;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.index__videos__bloqueInicio .vids {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+.index__videos__bloqueInicio .vids .vidsIndex {
+  height: 100%;
+  width: 100%;
+}
+
+.index__videos__bloqueInicio .primero {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.index__videos__bloqueInicio .segundo {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.index__videos__bloqueInicio .tercero {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.index__videos__bloqueInicio .cuarto {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.index__seccionQueOfrecemos > div {
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 100px;
+}
+
+.index__seccionQueOfrecemos #queOfrecemos {
+  margin-bottom: 3rem;
+}
+
+.index__seccionQueOfrecemos__of1, .index__seccionQueOfrecemos__of2, .index__seccionQueOfrecemos__of3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.index__seccionQueOfrecemos__of1__im1, .index__seccionQueOfrecemos__of2__im2, .index__seccionQueOfrecemos__of3__im3 {
+  width: 750px;
+}
+
+.index__seccionQueOfrecemos__of2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.index__seccionQueOfrecemos__of2__im2 {
+  -webkit-transform: translate(-20px, 0px);
+          transform: translate(-20px, 0px);
+}
+
+.index__seccionQueOfrecemos .ofrecemosText {
+  width: 35%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nosotros section {
+  margin-bottom: 5rem;
+}
+
+.nosotros__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosotros__1__imgMap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+.nosotros__2, .nosotros__3, .nosotros__4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosotros__3 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
+}
+
+.nosotros .nosotrosText {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.nosotros .imgNos {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+}
+
+.visitas {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "clubesV1 formu clubesV2";
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.visitas__formul {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: formu;
+}
+
+.visitas__formul__text {
+  width: 100%;
+}
+
+.visitas__formul__map {
+  height: 300px;
+  width: 80%;
+  border: 1px solid black;
+}
+
+.visitas__clubes1, .visitas__clubes2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: clubesV1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visitas__clubes1__imgs, .visitas__clubes2__imgs {
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  width: 150px;
+  height: 150px;
+  margin: 1rem 0;
+}
+
+.visitas__clubes2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: clubesV2;
+}
+
+.estadios__grandes {
+  border-top: 4px solid black;
+}
+
+.estadios__grandes__vids {
+  grid-area: vidsG;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.estadios__grandes .estadio7 {
+  grid-area: est7;
+}
+
+.estadios__grandes .estadio8 {
+  grid-area: est8;
+}
+
+.estadios__artisticos {
+  border-top: 4px solid black;
+}
+
+.estadios__artisticos__vids1, .estadios__artisticos__vids2, .estadios__miticos__vids1, .estadios__miticos__vids2 {
+  grid-area: vidsA1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.estadios__artisticos__vids2 {
+  grid-area: vidsA2;
+}
+
+.estadios__miticos {
+  border-top: 4px solid black;
+}
+
+.estadios__miticos__vids1 {
+  grid-area: vidsM1;
+}
+
+.estadios__miticos__vids2 {
+  grid-area: vidsM2;
+}
+
+.estadios .imgEstadios {
+  height: 220px;
+  width: 220px;
+}
+
+.estadios .estadiosText:hover {
+  -webkit-transform: scale(40px, 40px);
+          transform: scale(40px, 40px);
+}
+
+.estadios .vidEstadios {
+  height: 300px;
+  width: 350px;
+}
+
+.estadios .estadiosText {
+  grid-area: estTxt;
+}
+
+.estadios .estadio1 {
+  grid-area: est1;
+}
+
+.estadios .estadio2 {
+  grid-area: est2;
+}
+
+.estadios .estadio3 {
+  grid-area: est3;
+}
+
+.estadios .estadio4 {
+  grid-area: est4;
+}
+
+.estadios .estadio5 {
+  grid-area: est5;
+}
+
+.estadios .estadio6 {
+  grid-area: est6;
+}
+
+.barcelona-icon {
+  background-image: url("../assets/barcelona.jpg");
+}
+
+.napoli-icon {
+  background-image: url("../assets/napoli.jpg");
+}
+
+.dortmund-icon {
+  background-image: url("../assets/dortmund.jpg");
+}
+
+.arsenal-icon {
+  background-image: url("../assets/arsenal.jpg");
+}
+
+.liverpool-icon {
+  background-image: url("../assets/liverpool.jpg");
+}
+
+.btn--youtube {
+  background-image: url("../assets/youtube.png");
+}
+
+.btn--twitter {
+  background-image: url("../assets/twitter.png");
+}
+
+.btn--facebook {
+  background-image: url("../assets/facebook.png");
+}
+
+.btn--instagram {
+  background-image: url("../assets/instagram.png");
+}
+
+.of--1 {
+  background-image: url("../assets/canchas.png");
+}
+
+.of--2 {
+  background-image: url("../assets/bernabeuInstal.jpg");
+}
+
+.of--3 {
+  background-image: url("../assets/parquePrincipes.jpg");
+}
+
+.bg--headr {
+  background-image: -webkit-gradient(linear, right top, left top, from(#2e65ee), to(#2ec5ee));
+  background-image: linear-gradient(to left, #2e65ee, #2ec5ee);
+}
+
+.bg--footr {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e65ee), to(#2ec5ee));
+  background-image: linear-gradient(to right, #2e65ee, #2ec5ee);
+}
+
+.bg--main {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#8bb9ec), to(#8be9ec));
+  background-image: linear-gradient(to top, #8bb9ec, #8be9ec);
+}
+
+.padding-1 {
+  padding: 2px;
+}
+
+.padding-2 {
+  padding: 4px;
+}
+
+.padding-3 {
+  padding: 6px;
+}
+
+.padding-4 {
+  padding: 8px;
+}
+
+.padding-5 {
+  padding: 10px;
+}
+
+.padding-6 {
+  padding: 12px;
+}
+
+.padding-7 {
+  padding: 14px;
+}
+
+.padding-8 {
+  padding: 16px;
+}
+
+.padding-9 {
+  padding: 18px;
+}
+
+.padding-10 {
+  padding: 20px;
+}
+
+/*------------------------------MEDIA QUERIES (350 mobile 768 Tablet y 1200+ pc)--------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  .redes {
+    width: 40%;
+  }
+  /*---------------------INDEX--------------------------*/
+  .tituloPrincipal {
+    font-size: 400%;
+  }
+  .index__videos__bloqueInicio__vids1, .index__videos__bloqueInicio__vids2 {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .index__videos__bloqueInicio__vids1 .vids, .index__videos__bloqueInicio__vids2 .vids {
+    width: 200%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .index__seccionQueOfrecemos__of1__im1, .index__seccionQueOfrecemos__of2__im2, .index__seccionQueOfrecemos__of3__im3 {
+    width: 400px;
+    -webkit-transform: translate(-12px, 0);
+            transform: translate(-12px, 0);
+  }
+  .ofrecemosText {
+    width: 500px;
+  }
+  #queOfrecemos {
+    margin-top: 20rem;
+  }
+  .index__seccionQueOfrecemos .ofrecemosText {
+    width: 80%;
+    -webkit-box-flex: 1.5;
+        -ms-flex-positive: 1.5;
+            flex-grow: 1.5;
+    font-size: medium;
+  }
+  .index__seccionQueOfrecemos__of1, .index__seccionQueOfrecemos__of2, .index__seccionQueOfrecemos__of3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body {
+    background-color: red;
+    overflow-x: hidden;
+  }
+  /*---------------------NOSOTROS--------------------------*/
+  .nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
+    height: 300px;
+    width: 300px;
+  }
+  .nosotros .imgNos {
+    height: 350px;
+    width: 350px;
+  }
+  /*---------------------VISITAS--------------------------*/
+  .visitas__clubes1__imgs, .visitas__clubes2__imgs {
+    height: 80px;
+    width: 80px;
+  }
+  .visitas__formul__text {
+    margin: 0 0 3rem 0;
+  }
+  .visitas__formul__map {
+    height: 200px;
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+  /*---------------------ESTADIOS--------------------------*/
+  .imgEstadios {
+    height: 150px;
+    width: 150px;
+  }
+  .vidEstadios {
+    height: 250px;
+    width: 250px;
+  }
+  .estadiosText {
+    /*
+        width: 220px;
+        height: 220px;*/
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .estadiosMain > section > div > h3 {
+    font-size: medium;
+  }
+  .losMasGrandes {
+    /*
+        display: grid;
+        grid-template-areas: 
+            "estTxt est1 est2"
+            "est3 est4 est5"
+            "est6 est7 est8"
+            "vidsG vidsG vidsG";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px 300px 300px 400px;
+        gap: 0;*/
+    margin-bottom: 3rem;
+  }
+  .vidsArtisticos1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .vidsArtisticos2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem;
+  }
+  /*
+    .losMasMiticos{
+        display: grid;
+        grid-template-areas: 
+            "est1 est2 estTxt estTxt"
+            "est3 est4 est5 est6"
+            "vidsM1 vidsM1 vidsM1 vidsM1"
+            "vidsM2 vidsM2 vidsM2 vidsM2";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 400px 300px 400px 400px;
+    }*/
+  .vidsMiticos2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .redes {
+    width: 50%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    background-color: blue;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .redes > a {
+    width: 150%;
+    -webkit-transform: translate(50px, -60px);
+            transform: translate(50px, -60px);
+  }
+  /*---------------------INDEX--------------------------*/
+  .textoPpal {
+    font-size: medium;
+  }
+  .index__seccionQueOfrecemos__of1__im1, .index__seccionQueOfrecemos__of2__im2, .index__seccionQueOfrecemos__of3__im3 {
+    width: 50px;
+  }
+  .im1 {
+    width: 300px;
+    -webkit-transform: translate(0px, -140px);
+            transform: translate(0px, -140px);
+  }
+  .im2 {
+    width: 300px;
+    -webkit-transform: translate(0px, -90px);
+            transform: translate(0px, -90px);
+  }
+  .im3 {
+    width: 300px;
+    -webkit-transform: translate(0px, -170px);
+            transform: translate(0px, -170px);
+  }
+  #queOfrecemos {
+    margin-top: 0;
+  }
+  .ofrecemosText {
+    -webkit-transform: translate(-20px, 120px);
+            transform: translate(-20px, 120px);
+    font-size: small;
+    margin-top: 4rem;
+  }
+  /*---------------------NOSOTROS--------------------------*/
+  .nosotros__1__imgMap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
+    height: 200px;
+    width: 200px;
+  }
+  .nosotros .imgNos {
+    height: 150px;
+    width: 150px;
+  }
+  .nosotros__2, .nosotros__3, .nosotros__4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*---------------------VISITAS--------------------------*/
+  .visitas__clubes1__imgs, .visitas__clubes2__imgs {
+    height: 61px;
+    width: 61px;
+  }
+  .visitas__formul__text {
+    margin: 0 0 3rem 0;
+  }
+  .visitas__formul__map {
+    height: 200px;
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+  .tituloSecundario {
+    font-size: 200%;
+  }
+  form {
+    height: 100%;
+    width: 300px;
+  }
+  .formul {
+    margin: 0 0 3rem 0;
+  }
+  .footerLogo {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .visitas {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "formu" "clubesV1" "clubesV2";
+    -ms-grid-rows: 80% 10% 10%;
+        grid-template-rows: 80% 10% 10%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .visitas__clubes1, .visitas__clubes2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: clubesV1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 3rem 0 0 0;
+  }
+  .visitas__clubes2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: clubesV2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu > li > a {
+    font-size: small;
+    padding: 1px;
+    margin: 0;
+  }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formVis {
+    height: 1100px;
+  }
+  /*---------------------ESTADIOS--------------------------*/
+  header {
+    margin: 1px;
+    padding: 0px;
+  }
+  main {
+    margin: 1px;
+    padding: 0px;
+  }
+  footer {
+    margin: 1px;
+    padding: 0px;
+  }
+  .tituloPrincipal {
+    font-size: 300%;
+    width: 100%;
+  }
+  .estadio1 {
+    -webkit-transform: translate(-50px, 0px);
+            transform: translate(-50px, 0px);
+  }
+  .imgEstadios {
+    height: 100px;
+    width: 100px;
+  }
+  .vidEstadios {
+    height: 180px;
+    width: 200px;
+  }
+  .estadiosText {
+    height: 160px;
+    width: 220px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .estadiosMain > section > div > h3 {
+    font-size: small;
+  }
+  .losMasGrandes {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "estTxt estTxt" "est1 est2" "est3 est4" "est5 est6" "est7 est8" "vidsG vidsG";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 300px 250px 250px 250px 250px 400px;
+        grid-template-rows: 300px 250px 250px 250px 250px 400px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vidsGrandes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .losMasArtisticos {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "estTxt estTxt" "est1 est2" "est3 est4" "est5 est6" "vidsA1 vidsA1" "vidsA2 vidsA2";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 300px (250px)[3] (580px)[2];
+        grid-template-rows: 300px repeat(3, 250px) repeat(2, 580px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .vidsArtisticos1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+  .losMasMiticos {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "estTxt estTxt" "est1 est2" "est3 est4" "est5 est6" "vidsM1 vidsM1" "vidsM2 vidsM2";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 300px (250px)[3] 300px 600px;
+        grid-template-rows: 300px repeat(3, 250px) 300px 600px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .redes {
+    width: 60%;
+  }
+  .footerNav {
+    width: 20%;
+  }
+  .footerLogo {
+    width: 50%;
+  }
+  .menu > li > a {
+    text-decoration: none;
+    padding: 0;
+    margin: 2rem;
+    line-height: 300%;
+    font-size: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

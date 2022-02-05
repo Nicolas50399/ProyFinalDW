@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Roboto:ital@1&display=swap');
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin bordado($border) {
+    border: $border;
+}
+
+@mixin visitas($disp, $gta, $gr, $gc, $justco) {
+    display: $disp;
+    grid-template-areas: $gta;
+    grid-template-rows: $gr;
+    grid-template-columns: $gc;
+    justify-content: $justco;
+}
+
+@mixin visitasClubes($area, $disp, $dir, $wrap, $justco, $aligit){
+    grid-area: $area;
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $justco;
+    align-items: $aligit;
+}
+
+@mixin margin($mar) {
+    margin: $mar;
+}
+
+@mixin fuente($f) {
+    font-size: $f;
+}
+
+@mixin flexflow($f1, $f2) {
+    flex-direction: $f1;
+    flex-wrap: $f2;
+}
+
+@mixin transform($t) {
+    transform: $t;
+}
+
+@mixin padding($p) {
+    padding: $p;
+}
+
+
+@import "./parciales/reset";
+@import "./parciales/utiles";
+@import "./parciales/colores";
+@import "./parciales/header";
+@import "./parciales/footer";
+@import "./parciales/main";
+@import "./parciales/forms";
+@import "./parciales/index";
+@import "./parciales/nosotros";
+@import "./parciales/visitas";
+@import "./parciales/estadios";
+
+
+
+
+@each $equipo in barcelona, napoli, dortmund, arsenal, liverpool{
+    .#{$equipo}-icon{
+        background-image: url('../assets/#{$equipo}.jpg');
+    }
+}
+
+
+
+$redes: (
+    youtube: url("../assets/youtube.png"),
+    twitter: url("../assets/twitter.png"),
+    facebook: url("../assets/facebook.png"),
+    instagram: url("../assets/instagram.png"),
+);
+
+@each $red, $image in $redes {
+    
+    .btn--#{$red}{
+        background-image: $image;
+    }
+}
+
+$ofrecemos: (
+    1: url("../assets/canchas.png"),
+    2: url("../assets/bernabeuInstal.jpg"),
+    3: url("../assets/parquePrincipes.jpg"),
+);
+
+@each $ofr, $image in $ofrecemos {
+    .of--#{$ofr}{
+        background-image: $image;
+    }
+}
+
+$backgrounds: (
+    headr: linear-gradient(to left, #2e65ee, #2ec5ee),
+    footr: linear-gradient(to right, #2e65ee, #2ec5ee),
+    main: linear-gradient(to top, #8bb9ec, #8be9ec),
+);
+
+@each $bg, $image in $backgrounds {
+    .bg--#{$bg}{
+        background-image: $image;
+    }
+}
+
+@for $i from 1 through 10 {
+    .padding-#{$i}{
+        padding: 2px * $i;
+    }
+}
+    
+
+
+
+
+
+
+
+@import "./parciales/mqueries";

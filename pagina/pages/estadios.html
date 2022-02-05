@@ -9,34 +9,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estadios</title>
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <!--<link href="./css/style.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
-    <header>
+<body> 
+    <header class=" bg--headr padding-5">
         <h1 class="headerTit ">ESTADIOS</h1>
-        <div class="headerLogo">
-            <img src="" alt="">LOGO
-        </div>
         <div class="headerNav">
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="../index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="quienesSomos.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="contacto.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="#">ESTADIOS</a>
-                    </li>
-                    <li>
-                        <a class="ricoNegro bordadoBoke" href="visitas.html">VISITAS</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg logo">
+                <div class="container-fluid">
+                    <div class="container-fluid logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="" alt="" width="150" height="100" class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quienesSomos.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Estadios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contacto
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="contacto.html">Sugerencias</a></li>
+                                    <li><a class="dropdown-item" href="visitas.html">Visitas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -44,15 +60,13 @@
 
 
 
-    <main class="estadiosMain">
+    <main class="estadios bg--main padding-8">
         <h1 class="tituloPrincipal lead">Clasificación de Estadios</h1>
-        <section class="losMasGrandes container-fluid">
+        <section class="estadios__grandes container-fluid">
             <div class="row">
                 <div class="estadiosText col-xl-3 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <h2 class="tituloSecundario">Los más grandes</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minima alias facilis ducimus, in
-                        quam, inventore excepturi quidem aliquid nemo blanditiis nihil fugit rem? Aspernatur
-                        consequuntur sint non nisi itaque!</p>
+                    <p>En esta sección te presentamos los estadios con mayor capacidad del planeta, destacados en el ranking de estadios más grandes del mundo.</p>
                 </div>
                 <div class="estadio1 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-4">
                     <h3>Estadio Rungrado</h3>
@@ -528,15 +542,15 @@
                                     <!---->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="../assets/grandes/soccerCity1.jpeg" class="d-block w-100"
+                                            <img src="../assets/grandes/bukitJalil1.jpg" class="d-block w-100"
                                                 alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../assets/grandes/soccerCity2.jpg" class="d-block w-100"
+                                            <img src="../assets/grandes/bukitJalil2.jpg" class="d-block w-100"
                                                 alt="...">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="../assets/grandes/soccerCity3.jpg" class="d-block w-100"
+                                            <img src="../assets/grandes/bukitJalil3.jpg" class="d-block w-100"
                                                 alt="...">
                                         </div>
                                     </div>
@@ -565,15 +579,19 @@
             </div>
         </div>
                 
-            <div class="vidsGrandes row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12"><video class="vidEstadios" src=""></video></div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12"><video class="vidEstadios" src=""></video></div>
+            <div class="estadios__grandes__vids row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <iframe class="vidEstadios" width="350" height="300" src="https://www.youtube.com/embed/vLVlSplE-II" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <iframe class="vidEstadios" width="350" height="300" src="https://www.youtube.com/embed/Ak4dVekTz_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
 
 
-        <section class="losMasArtisticos container-fluid">
+        <section class="estadios__artisticos container-fluid">
             <div class="row">
                 <div class="estadio1 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <h3>Nacional de Beijing</h3>
@@ -641,9 +659,7 @@
                 </div>
                 <div class="estadiosText col-xl-6 col-lg-6 col-md-4 col-sm-6 col-xs-12">
                     <h2 class="tituloSecundario">Los más artísticos</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minima alias facilis ducimus, in quam,
-                        inventore excepturi quidem aliquid nemo blanditiis nihil fugit rem? Aspernatur consequuntur sint non
-                        nisi itaque!</p>
+                    <p>Acá te mostramos los estadios que se destacan por su estética tanto en su construcción como en sus alrededores. Si bien no son de los más famosos, llaman mucho la atención por la estética de sus paisajes.</p>
                 </div>
                 <div class="estadio2 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12"">
                     <h3>Marina Bay</h3>
@@ -966,21 +982,23 @@
                 </div>
             </div>
             
-            <div class="vidsArtisticos1 row">
-                <video class="vidEstadios col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12" src=""></video>
-                <video class="vidEstadios col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12" src=""></video>
+            <div class="estadios__artisticos__vids1 row">
+                <iframe class="vidEstadios col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12" width="350" height="300" src="https://www.youtube.com/embed/Ih_1O4tgghM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vidEstadios col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12" width="350" height="300" src="https://www.youtube.com/embed/dJcuKt1fCPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+                
             </div>
-            <div class="vidsArtisticos2 row">
-                <video class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" src=""></video>
-                <video class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" src=""></video>
-                <video class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" src=""></video>
+            <div class="estadios__artisticos__vids2 row">
+                <iframe class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" width="350" height="300" src="https://www.youtube.com/embed/DZ7nhiCl4zg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12"  width="350" height="300" src="https://www.youtube.com/embed/wRQ7tE8Nqe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" width="350" height="300" src="https://www.youtube.com/embed/l173GpW2mhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
         </section>
 
 
 
-        <section class="losMasMiticos container-fluid">
+        <section class="estadios__miticos container-fluid">
             <div class="row">
                 <div class="estadio1 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <h3>La Bombonera</h3>
@@ -1169,9 +1187,7 @@
                 </div>
                 <div class="estadiosText col-xl-3 col-lg-3 col-md-12 col-sm-6 col-xs-12">
                     <h2 class="tituloSecundario">Los más míticos</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minima alias facilis ducimus, in quam,
-                        inventore excepturi quidem aliquid nemo blanditiis nihil fugit rem? Aspernatur consequuntur sint non
-                        nisi itaque!</p>
+                    <p>Por último, te presentamos los estadios con más historia futbolistica. Estos estadios pertenecen a los clubes más grandes del mundo por su gloria futbolística y por la afición tan famosa que tienen. Estos estadios suelen ser destacados por partidos de enorme trascendencia que se han jugado en ellos y por los mejores jugadores de todos los tiempos que han pisado el campo de estos.</p>
                 </div>
             </div>
             <div class="row">
@@ -1361,18 +1377,19 @@
                         </div>
                 </div>
                 </div>
-                <div class="vidsMiticos1 col-xl-3 col-lg-12 col-md-12 col-sm-6 col-xs-12">
-                    <video class="vidEstadios" src=""></video>
+                <div class="estadios__miticos__vids1 col-xl-3 col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                    <iframe class="vidEstadios" width="350" height="300" src="https://www.youtube.com/embed/0W8PXBD-1Qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="vidsMiticos2 row">
-                <video class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" src=""></video>
-                <video class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" src=""></video>
-                <video class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" src=""></video>
+            <div class="estadios__miticos__vids2 row">
+                <iframe class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" width="350" height="300" src="https://www.youtube.com/embed/ZW5_9RegI-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" width="350" height="300" src="https://www.youtube.com/embed/vRNKqrFfA54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="vidEstadios col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12" width="350" height="300" src="https://www.youtube.com/embed/1aGBgktil38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg--footr padding-5">
         <div class="footerLogo">
             <img src="" alt="">LOGO
         </div>

@@ -1,0 +1,12 @@
+main {
+    margin: 2px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    section{
+        p{
+            color: black;
+        }
+    }
+}

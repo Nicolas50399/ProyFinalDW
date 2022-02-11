@@ -7,11 +7,10 @@
 
     body{
         background-color: black;
-        display: grid;
-        grid-template-rows: 350px auto 200px;
-        align-content: center;
-        justify-items: stretch;
-        overflow-x:hidden;
+        overflow-x:auto;
+    }
+    header{
+        height: 300px;
     }
 }
 

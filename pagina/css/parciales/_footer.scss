@@ -1,12 +1,12 @@
 footer{
     background-repeat: no-repeat;
     background-size: cover;
-    @include sizes(100%, 220px);
+    @include sizes(auto, 220px);
     font-weight: bold;
     margin: 2px;
     text-align: left;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     
     >div{
         margin-right: 50px;
@@ -23,7 +23,6 @@ footer{
         border: 2px solid black;
         font-size: 30px;
         @include sizes(150px, 100px);
-        display: inline-block;
         flex-grow: 0;
         align-self: center;
         transform: translate(30px, 50px);

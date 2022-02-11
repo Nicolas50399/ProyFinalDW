@@ -10,14 +10,11 @@
 
 * body {
   background-color: black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 350px auto 200px;
-      grid-template-rows: 350px auto 200px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  justify-items: stretch;
-  overflow-x: hidden;
+  overflow-x: auto;
+}
+
+* header {
+  height: 300px;
 }
 
 .tituloPrincipal {
@@ -63,6 +60,10 @@
 
 .negrita {
   font-weight: bold;
+}
+
+.container-fluid {
+  width: auto;
 }
 
 .color-1 {
@@ -116,7 +117,7 @@ header {
           align-items: center;
 }
 
-header h1 {
+header h1, header .headerTit {
   font-size: 350%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: underline;
@@ -229,14 +230,14 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 220px;
-  width: 100%;
+  width: auto;
   font-weight: bold;
   margin: 2px;
   text-align: left;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 footer > div {
@@ -255,7 +256,6 @@ footer .footerLogo {
   font-size: 30px;
   height: 100px;
   width: 150px;
-  display: inline-block;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -619,7 +619,6 @@ form .inputBoton:focus {
 }
 
 .visitas__clubes1__imgs, .visitas__clubes2__imgs {
-  border: 1px solid black;
   height: 150px;
   width: 150px;
   width: 150px;
@@ -735,6 +734,10 @@ form .inputBoton:focus {
 
 .estadios .estadio6 {
   grid-area: est6;
+}
+
+.error__img {
+  margin: 4rem 0;
 }
 
 .barcelona-icon {
@@ -998,7 +1001,6 @@ form .inputBoton:focus {
     gap: 3rem;
   }
   .redes {
-    width: 50%;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -1009,7 +1011,7 @@ form .inputBoton:focus {
     background-color: blue;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: auto;
   }
   .redes {
     display: -webkit-box;
@@ -1021,9 +1023,7 @@ form .inputBoton:focus {
             flex-direction: column;
   }
   .redes > a {
-    width: 150%;
-    -webkit-transform: translate(50px, -60px);
-            transform: translate(50px, -60px);
+    padding: 0;
   }
   /*---------------------INDEX--------------------------*/
   .textoPpal {
@@ -1199,21 +1199,11 @@ form .inputBoton:focus {
     font-size: 300%;
     width: 100%;
   }
-  .estadio1 {
-    -webkit-transform: translate(-50px, 0px);
-            transform: translate(-50px, 0px);
-  }
-  .imgEstadios {
-    height: 100px;
-    width: 100px;
-  }
-  .vidEstadios {
-    height: 180px;
-    width: 200px;
+  .estadios .vidEstadios {
+    height: 200px;
+    width: 250px;
   }
   .estadiosText {
-    height: 160px;
-    width: 220px;
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: start;
@@ -1289,6 +1279,22 @@ form .inputBoton:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .artisticosText {
+    -webkit-transform: translate(0px, -270px);
+            transform: translate(0px, -270px);
+  }
+  .moverArtistico {
+    -webkit-transform: translate(0px, 210px);
+            transform: translate(0px, 210px);
+  }
+  .miticosText {
+    -webkit-transform: translate(0px, -810px);
+            transform: translate(0px, -810px);
+  }
+  .moverMitico {
+    -webkit-transform: translate(0px, 325px);
+            transform: translate(0px, 325px);
   }
   .redes {
     width: 60%;

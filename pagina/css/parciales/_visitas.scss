@@ -27,7 +27,6 @@
         align-items: center;
 
         &__imgs{
-            @include bordado(1px solid black);
             @include sizes(150px, 150px);
             width: 150px;
             height: 150px;

@@ -35,6 +35,7 @@ header{
     }
 
     .headerTit{
+        @extend h1;
         grid-area: headerTit;
         animation-iteration-count:1;
         animation-timing-function:ease;

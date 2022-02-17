@@ -1313,4 +1313,11 @@ form .inputBoton:focus {
     font-size: 100%;
   }
 }
+
+@media only screen and (min-width: 1380px) {
+  .estadios .imgEstadios {
+    width: 300px;
+    height: 300px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

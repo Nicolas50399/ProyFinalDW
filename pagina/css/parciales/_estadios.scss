@@ -48,7 +48,8 @@
     }
 
     .imgEstadios{
-        @include sizes(220px, 220px);
+        width: 100%;
+        height: 100%;
     }
     
     .estadiosText:hover{

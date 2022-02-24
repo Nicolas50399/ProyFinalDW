@@ -33,7 +33,7 @@
     &__2{
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     
@@ -47,7 +47,7 @@
     }
 
     .nosotrosText{
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
     
     .imgNos{

@@ -1,5 +1,40 @@
 /*------------------------------MEDIA QUERIES (350 mobile 768 Tablet y 1200+ pc)--------------------------------------------------------------------------------------------------------------------------*/
 
+@media only screen and (max-width: 1275px){
+    .index__seccionQueOfrecemos__of1{
+        flex-wrap: wrap;
+    }
+    .index__seccionQueOfrecemos__of2{
+        flex-wrap: wrap;
+    }
+    .index__seccionQueOfrecemos__of3{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .nosotros__4{
+        flex-wrap: wrap;
+    }
+    .nosotros__3{
+        flex-wrap: wrap;
+    }
+    .nosotros__2{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .nosotros__2 .nosotrosText{
+        flex-basis: 75%;
+    }
+    .nosotros__3 .nosotrosText{
+        flex-basis: 75%;
+    }
+    .nosotros__4 .nosotrosText{
+        flex-basis: 75%;
+    }
+}
+
+
 @media only screen and (max-width: 768px){
 
     .redes{
@@ -9,7 +44,11 @@
     /*---------------------INDEX--------------------------*/
 
     .tituloPrincipal{
-        font-size: 400%;
+        font-size: 300%;
+    }
+
+    .tituloSecundario{
+        font-size: 200%
     }
 
 
@@ -26,9 +65,17 @@
         flex-direction: row;
     }
 
-    .index__seccionQueOfrecemos__of1__im1{
-        width: 400px;
+    .im1{
+        width: 100%;
         transform: translate(-12px, 0);
+    }
+
+    .im2{
+        width: 100%;
+    }
+
+    .im3{
+        width: 90%;
     }
 
     .ofrecemosText{
@@ -53,7 +100,6 @@
 
     body{
         background-color: red;
-        overflow-x:hidden;
     }
 
     /*---------------------NOSOTROS--------------------------*/
@@ -64,6 +110,21 @@
 
     .nosotros .imgNos{
         @include sizes(350px, 350px);
+    }
+
+    .nosotrosTextP{
+        padding: 0;
+        margin: 2rem 3rem;
+    }
+
+    .nosotros__2 .nosotrosText{
+        flex-basis: 90%;
+    }
+    .nosotros__3 .nosotrosText{
+        flex-basis: 90%;
+    }
+    .nosotros__4 .nosotrosText{
+        flex-basis: 90%;
     }
 
     /*---------------------VISITAS--------------------------*/
@@ -83,8 +144,8 @@
     .imgEstadios{
         @include sizes(150px, 150px);
     }
-    .vidEstadios{
-        @include sizes(250px, 250px);
+    .estadios .vidEstadios{
+        width: 100%;
     }
     .estadiosText{
         /*
@@ -167,20 +228,34 @@
     .textoPpal{
         font-size: medium;
     }
-    .index__seccionQueOfrecemos__of1__im1{
-        width: 50px;
+    .index__seccionQueOfrecemos .im1 {
+        width: 100%;
+        transform: translate(0px, 150px);
+    }
+    .index__seccionQueOfrecemos .im2 {
+        width: 100%;
+        transform: translate(25px, 150px);
+    }
+    .index__seccionQueOfrecemos .im3 {
+        width: 100%;
+        transform: translate(0px, 150px);
+    }
+
+    .index{
+        justify-content: center;
+        text-align: center;
     }
 
     .im1{
-        width: 300px;
+        width: 1000%;
         transform: translate(0px, -140px);
     }
     .im2{
-        width: 300px;
-        transform: translate(0px, -90px);
+        width: 1000%;
+        transform: translate(16px, -90px);
     }
     .im3{
-        width: 300px;
+        width: 1000%;
         transform: translate(0px, -170px);
     }
 
@@ -188,10 +263,18 @@
         margin-top: 0;
     }
 
+    .index__seccionQueOfrecemos #queOfrecemos {
+        margin-bottom: 0; 
+        transform: translate(0, 70px);
+    }
+
     .ofrecemosText{
-        transform: translate(-20px, 120px);
+        transform: translate(0, 120px);
         font-size: small;
         margin-top: 4rem;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 
@@ -214,6 +297,23 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+    }
+
+    .nosotrosTextP{
+        margin: 0 10px;
+    }
+
+    .nosotros__2 .nosotrosText{
+        flex-basis: 100%;
+        font-size: small;
+    }
+    .nosotros__3 .nosotrosText{
+        flex-basis: 100%;
+        font-size: small;
+    }
+    .nosotros__4 .nosotrosText{
+        flex-basis: 100%;
+        font-size: small;
     }
 
     /*---------------------VISITAS--------------------------*/
@@ -283,12 +383,12 @@
         font-size: 300%;
         width: 100%;
     }
-    .estadios .vidEstadios{
-        @include sizes(250px, 200px);
-    }
     .estadiosText{
         justify-self: center;
         align-self: flex-start;
+    }
+    .estadiosParrafo{
+        font-size: small;
     }
     .estadiosMain>section>div>h3{
         font-size: small;
@@ -356,7 +456,7 @@
     }
 
     .moverArtistico{
-        transform: translate(0px, 210px);
+        transform: translate(0px, 230px);
     }
 
     .miticosText{
@@ -364,11 +464,14 @@
     }
 
     .moverMitico{
-        transform: translate(0px, 325px);
+        transform: translate(0px, 250px);
     }
 
-    .redes{
+    .bordadoRedes{
         width: 60%;
+    }
+    .redes{
+        transform: translate(60px, -100px);
     }
     .footerNav{
         width: 20%;
@@ -387,11 +490,4 @@
 
 
     
-}
-
-@media only screen and (min-width: 1380px){
-    .estadios .imgEstadios{
-        width: 300px;
-        height: 300px;
-    }
 }

@@ -245,20 +245,14 @@ footer > div {
 }
 
 footer .redes {
-  width: 30%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  width: 25%;
   justify-self: flex-end;
 }
 
 footer .footerLogo {
-  border: 2px solid black;
-  font-size: 30px;
+  border: 1px solid black;
   height: 100px;
   width: 150px;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -435,8 +429,8 @@ form .inputBoton:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -471,6 +465,18 @@ form .inputBoton:focus {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+}
+
+.index__seccionQueOfrecemos .im1 {
+  width: 90%;
+}
+
+.index__seccionQueOfrecemos .im2 {
+  width: 90%;
+}
+
+.index__seccionQueOfrecemos .im3 {
+  width: 90%;
 }
 
 @-webkit-keyframes aparecer {
@@ -546,9 +552,9 @@ form .inputBoton:focus {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -562,8 +568,8 @@ form .inputBoton:focus {
 }
 
 .nosotros .nosotrosText {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .nosotros .imgNos {
@@ -694,8 +700,8 @@ form .inputBoton:focus {
 }
 
 .estadios .imgEstadios {
-  height: 220px;
-  width: 220px;
+  width: 100%;
+  height: 100%;
 }
 
 .estadios .estadiosText:hover {
@@ -804,53 +810,149 @@ form .inputBoton:focus {
 }
 
 .padding-1 {
-  padding: 2px;
-}
-
-.padding-2 {
   padding: 4px;
 }
 
-.padding-3 {
-  padding: 6px;
-}
-
-.padding-4 {
+.padding-2 {
   padding: 8px;
 }
 
-.padding-5 {
-  padding: 10px;
-}
-
-.padding-6 {
+.padding-3 {
   padding: 12px;
 }
 
-.padding-7 {
-  padding: 14px;
-}
-
-.padding-8 {
+.padding-4 {
   padding: 16px;
 }
 
-.padding-9 {
-  padding: 18px;
-}
-
-.padding-10 {
+.padding-5 {
   padding: 20px;
 }
 
+.padding-6 {
+  padding: 24px;
+}
+
+.padding-7 {
+  padding: 28px;
+}
+
+.padding-8 {
+  padding: 32px;
+}
+
+.padding-9 {
+  padding: 36px;
+}
+
+.padding-10 {
+  padding: 40px;
+}
+
+.angosto-1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.angosto-2 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.angosto-3 {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.angosto-4 {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.angosto-5 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.angosto-6 {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.angosto-7 {
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.angosto-8 {
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.angosto-9 {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.angosto-10 {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
 /*------------------------------MEDIA QUERIES (350 mobile 768 Tablet y 1200+ pc)--------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1275px) {
+  .index__seccionQueOfrecemos__of1, .index__seccionQueOfrecemos__of2, .index__seccionQueOfrecemos__of3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .index__seccionQueOfrecemos__of2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .index__seccionQueOfrecemos__of3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .nosotros__4 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nosotros__3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nosotros__2, .nosotros__3, .nosotros__4 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+  .nosotros__2 .nosotrosText, .nosotros__3 .nosotrosText, .nosotros__4 .nosotrosText {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+  .nosotros__3 .nosotrosText {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+  .nosotros__4 .nosotrosText {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .redes {
     width: 40%;
   }
   /*---------------------INDEX--------------------------*/
   .tituloPrincipal {
-    font-size: 400%;
+    font-size: 300%;
+  }
+  .tituloSecundario {
+    font-size: 200%;
   }
   .index__videos__bloqueInicio__vids1, .index__videos__bloqueInicio__vids2 {
     height: 200px;
@@ -869,10 +971,16 @@ form .inputBoton:focus {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .index__seccionQueOfrecemos__of1__im1, .index__seccionQueOfrecemos__of2__im2, .index__seccionQueOfrecemos__of3__im3 {
-    width: 400px;
+  .im1 {
+    width: 100%;
     -webkit-transform: translate(-12px, 0);
             transform: translate(-12px, 0);
+  }
+  .im2 {
+    width: 100%;
+  }
+  .im3 {
+    width: 90%;
   }
   .ofrecemosText {
     width: 500px;
@@ -906,7 +1014,6 @@ form .inputBoton:focus {
   }
   body {
     background-color: red;
-    overflow-x: hidden;
   }
   /*---------------------NOSOTROS--------------------------*/
   .nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
@@ -916,6 +1023,22 @@ form .inputBoton:focus {
   .nosotros .imgNos {
     height: 350px;
     width: 350px;
+  }
+  .nosotrosTextP {
+    padding: 0;
+    margin: 2rem 3rem;
+  }
+  .nosotros__2 .nosotrosText, .nosotros__3 .nosotrosText, .nosotros__4 .nosotrosText {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+  .nosotros__3 .nosotrosText {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+  .nosotros__4 .nosotrosText {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
   }
   /*---------------------VISITAS--------------------------*/
   .visitas__clubes1__imgs, .visitas__clubes2__imgs {
@@ -935,9 +1058,8 @@ form .inputBoton:focus {
     height: 150px;
     width: 150px;
   }
-  .vidEstadios {
-    height: 250px;
-    width: 250px;
+  .estadios .vidEstadios {
+    width: 100%;
   }
   .estadiosText {
     /*
@@ -1029,32 +1151,58 @@ form .inputBoton:focus {
   .textoPpal {
     font-size: medium;
   }
-  .index__seccionQueOfrecemos__of1__im1, .index__seccionQueOfrecemos__of2__im2, .index__seccionQueOfrecemos__of3__im3 {
-    width: 50px;
+  .index__seccionQueOfrecemos .im1 {
+    width: 100%;
+    -webkit-transform: translate(0px, 150px);
+            transform: translate(0px, 150px);
+  }
+  .index__seccionQueOfrecemos .im2 {
+    width: 100%;
+    -webkit-transform: translate(25px, 150px);
+            transform: translate(25px, 150px);
+  }
+  .index__seccionQueOfrecemos .im3 {
+    width: 100%;
+    -webkit-transform: translate(0px, 150px);
+            transform: translate(0px, 150px);
+  }
+  .index {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
   }
   .im1 {
-    width: 300px;
+    width: 1000%;
     -webkit-transform: translate(0px, -140px);
             transform: translate(0px, -140px);
   }
   .im2 {
-    width: 300px;
-    -webkit-transform: translate(0px, -90px);
-            transform: translate(0px, -90px);
+    width: 1000%;
+    -webkit-transform: translate(16px, -90px);
+            transform: translate(16px, -90px);
   }
   .im3 {
-    width: 300px;
+    width: 1000%;
     -webkit-transform: translate(0px, -170px);
             transform: translate(0px, -170px);
   }
   #queOfrecemos {
     margin-top: 0;
   }
+  .index__seccionQueOfrecemos #queOfrecemos {
+    margin-bottom: 0;
+    -webkit-transform: translate(0, 70px);
+            transform: translate(0, 70px);
+  }
   .ofrecemosText {
-    -webkit-transform: translate(-20px, 120px);
-            transform: translate(-20px, 120px);
+    -webkit-transform: translate(0, 120px);
+            transform: translate(0, 120px);
     font-size: small;
     margin-top: 4rem;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   /*---------------------NOSOTROS--------------------------*/
   .nosotros__1__imgMap {
@@ -1085,6 +1233,24 @@ form .inputBoton:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .nosotrosTextP {
+    margin: 0 10px;
+  }
+  .nosotros__2 .nosotrosText, .nosotros__3 .nosotrosText, .nosotros__4 .nosotrosText {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: small;
+  }
+  .nosotros__3 .nosotrosText {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: small;
+  }
+  .nosotros__4 .nosotrosText {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    font-size: small;
   }
   /*---------------------VISITAS--------------------------*/
   .visitas__clubes1__imgs, .visitas__clubes2__imgs {
@@ -1199,15 +1365,14 @@ form .inputBoton:focus {
     font-size: 300%;
     width: 100%;
   }
-  .estadios .vidEstadios {
-    height: 200px;
-    width: 250px;
-  }
   .estadiosText {
     -ms-grid-column-align: center;
         justify-self: center;
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  .estadiosParrafo {
+    font-size: small;
   }
   .estadiosMain > section > div > h3 {
     font-size: small;
@@ -1285,19 +1450,23 @@ form .inputBoton:focus {
             transform: translate(0px, -270px);
   }
   .moverArtistico {
-    -webkit-transform: translate(0px, 210px);
-            transform: translate(0px, 210px);
+    -webkit-transform: translate(0px, 230px);
+            transform: translate(0px, 230px);
   }
   .miticosText {
     -webkit-transform: translate(0px, -810px);
             transform: translate(0px, -810px);
   }
   .moverMitico {
-    -webkit-transform: translate(0px, 325px);
-            transform: translate(0px, 325px);
+    -webkit-transform: translate(0px, 250px);
+            transform: translate(0px, 250px);
+  }
+  .bordadoRedes {
+    width: 60%;
   }
   .redes {
-    width: 60%;
+    -webkit-transform: translate(60px, -100px);
+            transform: translate(60px, -100px);
   }
   .footerNav {
     width: 20%;
@@ -1311,13 +1480,6 @@ form .inputBoton:focus {
     margin: 2rem;
     line-height: 300%;
     font-size: 100%;
-  }
-}
-
-@media only screen and (min-width: 1380px) {
-  .estadios .imgEstadios {
-    width: 300px;
-    height: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */

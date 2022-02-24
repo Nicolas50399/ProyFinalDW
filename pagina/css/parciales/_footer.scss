@@ -13,17 +13,14 @@ footer{
     }
 
     .redes{
-        width: 30%;
-        align-self: flex-end;
+        width: 25%;
         justify-self: flex-end;
     }
     
     
     .footerLogo{
-        border: 2px solid black;
-        font-size: 30px;
+        border: 1px solid black;
         @include sizes(150px, 100px);
-        flex-grow: 0;
         align-self: center;
         transform: translate(30px, 50px);
     }

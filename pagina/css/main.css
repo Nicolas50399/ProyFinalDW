@@ -603,7 +603,8 @@ form .inputBoton:focus {
 }
 
 .nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
-  width: 50%;
+  height: 400px;
+  width: 400px;
   border: 2px solid black;
 }
 
@@ -1090,6 +1091,10 @@ form .inputBoton:focus {
             align-items: center;
   }
   /*---------------------NOSOTROS--------------------------*/
+  .nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
+    height: 300px;
+    width: 300px;
+  }
   .nosotros .imgNos {
     height: 350px;
     width: 350px;

@@ -804,6 +804,51 @@ form .inputBoton:focus {
   grid-area: est6;
 }
 
+.sugerencias {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "sugT1 sugForm sugT2" "sugT3 sugForm sugT4";
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+
+.sugerencias__txt1, .sugerencias__txt2, .sugerencias__txt3, .sugerencias__txt4 {
+  width: 80%;
+  font-size: 120%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sugT1;
+}
+
+.sugerencias__txt2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: sugT2;
+}
+
+.sugerencias__txt3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sugT3;
+}
+
+.sugerencias__txt4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sugT4;
+}
+
+.sugerencias__form {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: sugForm;
+}
+
 .error__img {
   margin: 4rem 0;
 }
@@ -1115,6 +1160,20 @@ form .inputBoton:focus {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
   }
+  /*---------------------SUGERENCIAS--------------------------*/
+  .sugerencias {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "sugT1 sugT2" "sugForm sugForm" "sugT3 sugT4";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+  }
+  .sugerencias__txt1, .sugerencias__txt2, .sugerencias__txt3, .sugerencias__txt4 {
+    font-size: 100%;
+    width: 85%;
+  }
   /*---------------------VISITAS--------------------------*/
   .visitas__clubes1__imgs, .visitas__clubes2__imgs {
     height: 80px;
@@ -1334,6 +1393,10 @@ form .inputBoton:focus {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     font-size: small;
+  }
+  /*---------------------SUGERENCIAS--------------------------*/
+  .sugerencias__txt1, .sugerencias__txt2, .sugerencias__txt3, .sugerencias__txt4 {
+    font-size: 80%;
   }
   /*---------------------VISITAS--------------------------*/
   .visitas__clubes1__imgs, .visitas__clubes2__imgs {

@@ -146,6 +146,23 @@
         flex-basis: 90%;
     }
 
+    /*---------------------SUGERENCIAS--------------------------*/
+
+    .sugerencias{
+        display: grid;
+        grid-template-areas: 
+            "sugT1 sugT2"
+            "sugForm sugForm"
+            "sugT3 sugT4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .sugerencias__txt1{
+        font-size: 100%;
+        width: 85%;
+    }
+
     /*---------------------VISITAS--------------------------*/
 
     .visitas__clubes1__imgs{
@@ -346,6 +363,13 @@
     .nosotros__4 .nosotrosText{
         flex-basis: 100%;
         font-size: small;
+    }
+
+
+    /*---------------------SUGERENCIAS--------------------------*/
+    
+    .sugerencias__txt1{
+        font-size: 80%;
     }
 
     /*---------------------VISITAS--------------------------*/

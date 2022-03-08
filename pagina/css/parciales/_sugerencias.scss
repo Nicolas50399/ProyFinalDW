@@ -1,0 +1,30 @@
+.sugerencias{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+        "sugT1 sugForm sugT2"
+        "sugT3 sugForm sugT4";
+    grid-template-columns: 1fr 2fr 1fr;
+
+    &__txt1{
+        width: 80%;
+        font-size: 120%;
+        grid-area: sugT1;
+    }
+    &__txt2{
+        @extend .sugerencias__txt1;
+        grid-area: sugT2;
+    }
+    &__txt3{
+        @extend .sugerencias__txt1;
+        grid-area: sugT3;
+    }
+    &__txt4{
+        @extend .sugerencias__txt1;
+        grid-area: sugT4;
+    }
+    &__form{
+        grid-area: sugForm;
+    }
+}

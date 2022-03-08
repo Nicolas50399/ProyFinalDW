@@ -13,6 +13,10 @@
 }
 
 @media only screen and (max-width: 950px){
+    header .headerNav{
+        transform: translate(-20px, 0);
+    }
+
     .nosotros__4{
         flex-wrap: wrap;
     }
@@ -35,10 +39,25 @@
 }
 
 
+
 @media only screen and (max-width: 768px){
 
-    .redes{
-        width: 40%;
+    footer .redes{
+        width: 70%;
+    }
+
+    footer .footerMap{
+        width: 90%;
+        height: 70%;
+    }
+
+    footer .footerList>li>a{
+        margin: 0px 10px;
+        font-size: 65%;
+    }
+
+    header .headerLogo{
+        width: 60%;
     }
 
     /*---------------------INDEX--------------------------*/
@@ -65,9 +84,12 @@
         flex-direction: row;
     }
 
+    .index__seccionQueOfrecemos__of1__im1{
+        width: 100%;
+    }
+
     .im1{
         width: 100%;
-        transform: translate(-12px, 0);
     }
 
     .im2{
@@ -75,7 +97,7 @@
     }
 
     .im3{
-        width: 90%;
+        width: 100%;
     }
 
     .ofrecemosText{
@@ -130,7 +152,7 @@
     /*---------------------VISITAS--------------------------*/
 
     .visitas__clubes1__imgs{
-        @include sizes(80px, 80px);
+        @include sizes(80%, 80px);
     }
     .visitas__formul__text{
         @include margin(0 0 3rem 0);
@@ -197,9 +219,6 @@
         flex-wrap: wrap;
         gap: 3rem;
     }
-    .redes{
-        align-self: flex-start;
-    }
 
 
     
@@ -215,12 +234,29 @@
     }
 
     .redes{
+        width: 80%;
         display: flex;
         flex-direction: column;
     }
 
     .redes > a{
         padding: 0;
+    }
+
+    .footerText{
+        font-size: x-small;
+    }
+
+    footer .footerMap{
+        width: 100px;
+    }
+
+    footer .footerLogo{
+        width: 100%;
+    }
+
+    header .headerLogo{
+        width: 80%;
     }
 
 /*---------------------INDEX--------------------------*/
@@ -234,7 +270,7 @@
     }
     .index__seccionQueOfrecemos .im2 {
         width: 100%;
-        transform: translate(25px, 150px);
+        transform: translate(0, 150px);
     }
     .index__seccionQueOfrecemos .im3 {
         width: 100%;
@@ -466,20 +502,13 @@
     .moverMitico{
         transform: translate(0px, 250px);
     }
-
+    
     .bordadoRedes{
-        width: 60%;
-    }
-    .redes{
-        transform: translate(60px, -100px);
-    }
-    .footerNav{
-        width: 20%;
+        @include bordado(0.5px solid black);
     }
 
-    .footerLogo{
-        width: 50%;
-    }
+
+    
     .menu>li>a{
         text-decoration: none;
         padding: 0;

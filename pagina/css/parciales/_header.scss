@@ -3,16 +3,18 @@ header{
     font-style: italic;
     font-weight: bold;
     margin: 2px;
+    @include sizes(auto, auto);
+    @include bordado(0.5px solid black);
+    overflow: hidden;
     display: grid;
     grid-template-areas:
-        "headerTit"
-        "headerNav";
+        "headerTit headerTit"
+        "headerL headerNav";
     
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr;
     align-content:center;
     justify-content: space-between;
-    justify-items: stretch;
+    justify-items: center;
     align-items: center;
 
     h1{
@@ -23,15 +25,20 @@ header{
         color: white;
     }
 
-    .logo{
+    .headerLogo{
         display: flex;
         flex-direction: row;
+        width: 30%;
+        grid-area: headerL;
+        justify-self: flex-start;
     }
     
     
 
     .headerNav{
         grid-area: headerNav;
+        justify-self: flex-end;
+        transform: translate(0, -50px)
     }
 
     .headerTit{

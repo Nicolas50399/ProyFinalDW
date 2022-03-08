@@ -62,13 +62,13 @@
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             animation-name: aparecer;
             animation-duration: 2s;
 
             &__im1{
-                width: 750px;
+                width: 60%;
             }
         }
         
@@ -78,7 +78,6 @@
             
             &__im2{
                 @extend .index__seccionQueOfrecemos__of1__im1;
-                transform: translate(-20px, 0px);
             }
         }
         

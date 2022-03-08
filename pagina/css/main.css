@@ -13,10 +13,6 @@
   overflow-x: auto;
 }
 
-* header {
-  height: 300px;
-}
-
 .tituloPrincipal {
   font-size: 550%;
   font-family: 'Open Sans', sans-serif;
@@ -99,19 +95,21 @@ header {
   font-style: italic;
   font-weight: bold;
   margin: 2px;
+  height: auto;
+  width: auto;
+  border: 0.5px solid black;
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "headerTit" "headerNav";
-  -ms-grid-rows: 1fr 2fr;
-      grid-template-rows: 1fr 2fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+      grid-template-areas: "headerTit headerTit" "headerL headerNav";
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  justify-items: stretch;
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -125,7 +123,7 @@ header h1, header .headerTit {
   color: white;
 }
 
-header .logo {
+header .headerLogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,17 +131,26 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 30%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: headerL;
+  justify-self: flex-start;
 }
 
 header .headerNav {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: headerNav;
+  justify-self: flex-end;
+  -webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);
 }
 
 header .headerTit {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: headerTit;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
@@ -229,35 +236,96 @@ header .menu > li > a:hover {
 footer {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 220px;
+  height: auto;
   width: auto;
+  border: 0.5px solid black;
   font-weight: bold;
   margin: 2px;
   text-align: left;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-}
-
-footer > div {
-  margin-right: 50px;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: "logoF redesF mapF" "navF navF navF" "textF textF textF";
 }
 
 footer .redes {
-  width: 25%;
-  justify-self: flex-end;
-}
-
-footer .footerLogo {
-  border: 1px solid black;
-  height: 100px;
-  width: 150px;
+  width: 45%;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transform: translate(30px, 50px);
-          transform: translate(30px, 50px);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: redesF;
+}
+
+footer .footerLogo {
+  width: 60%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logoF;
+}
+
+footer .footerNav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: navF;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .footerList {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footerList li > a {
+  margin: 0px 20px;
+  font-size: 85%;
+  color: black;
+}
+
+footer .footerMap {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: mapF;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 60%;
+}
+
+footer .footerText {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: textF;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
 }
 
 main {
@@ -431,8 +499,9 @@ form .inputBoton:focus {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -443,7 +512,7 @@ form .inputBoton:focus {
 }
 
 .index__seccionQueOfrecemos__of1__im1, .index__seccionQueOfrecemos__of2__im2, .index__seccionQueOfrecemos__of3__im3 {
-  width: 750px;
+  width: 60%;
 }
 
 .index__seccionQueOfrecemos__of2 {
@@ -451,11 +520,6 @@ form .inputBoton:focus {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-}
-
-.index__seccionQueOfrecemos__of2__im2 {
-  -webkit-transform: translate(-20px, 0px);
-          transform: translate(-20px, 0px);
 }
 
 .index__seccionQueOfrecemos .ofrecemosText {
@@ -626,9 +690,7 @@ form .inputBoton:focus {
 
 .visitas__clubes1__imgs, .visitas__clubes2__imgs {
   height: 150px;
-  width: 150px;
-  width: 150px;
-  height: 150px;
+  width: 65%;
   margin: 1rem 0;
 }
 
@@ -916,6 +978,10 @@ form .inputBoton:focus {
 }
 
 @media only screen and (max-width: 950px) {
+  header .headerNav {
+    -webkit-transform: translate(-20px, 0);
+            transform: translate(-20px, 0);
+  }
   .nosotros__4 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -944,8 +1010,19 @@ form .inputBoton:focus {
 }
 
 @media only screen and (max-width: 768px) {
-  .redes {
-    width: 40%;
+  footer .redes {
+    width: 70%;
+  }
+  footer .footerMap {
+    width: 90%;
+    height: 70%;
+  }
+  footer .footerList > li > a {
+    margin: 0px 10px;
+    font-size: 65%;
+  }
+  header .headerLogo {
+    width: 60%;
   }
   /*---------------------INDEX--------------------------*/
   .tituloPrincipal {
@@ -971,16 +1048,17 @@ form .inputBoton:focus {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .index__seccionQueOfrecemos__of1__im1, .index__seccionQueOfrecemos__of2__im2, .index__seccionQueOfrecemos__of3__im3 {
+    width: 100%;
+  }
   .im1 {
     width: 100%;
-    -webkit-transform: translate(-12px, 0);
-            transform: translate(-12px, 0);
   }
   .im2 {
     width: 100%;
   }
   .im3 {
-    width: 90%;
+    width: 100%;
   }
   .ofrecemosText {
     width: 500px;
@@ -1043,7 +1121,7 @@ form .inputBoton:focus {
   /*---------------------VISITAS--------------------------*/
   .visitas__clubes1__imgs, .visitas__clubes2__imgs {
     height: 80px;
-    width: 80px;
+    width: 80%;
   }
   .visitas__formul__text {
     margin: 0 0 3rem 0;
@@ -1122,10 +1200,6 @@ form .inputBoton:focus {
         flex-wrap: wrap;
     gap: 3rem;
   }
-  .redes {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -1136,6 +1210,7 @@ form .inputBoton:focus {
     overflow-x: auto;
   }
   .redes {
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1146,6 +1221,18 @@ form .inputBoton:focus {
   }
   .redes > a {
     padding: 0;
+  }
+  .footerText {
+    font-size: x-small;
+  }
+  footer .footerMap {
+    width: 100px;
+  }
+  footer .footerLogo {
+    width: 100%;
+  }
+  header .headerLogo {
+    width: 80%;
   }
   /*---------------------INDEX--------------------------*/
   .textoPpal {
@@ -1158,8 +1245,8 @@ form .inputBoton:focus {
   }
   .index__seccionQueOfrecemos .im2 {
     width: 100%;
-    -webkit-transform: translate(25px, 150px);
-            transform: translate(25px, 150px);
+    -webkit-transform: translate(0, 150px);
+            transform: translate(0, 150px);
   }
   .index__seccionQueOfrecemos .im3 {
     width: 100%;
@@ -1462,17 +1549,7 @@ form .inputBoton:focus {
             transform: translate(0px, 250px);
   }
   .bordadoRedes {
-    width: 60%;
-  }
-  .redes {
-    -webkit-transform: translate(60px, -100px);
-            transform: translate(60px, -100px);
-  }
-  .footerNav {
-    width: 20%;
-  }
-  .footerLogo {
-    width: 50%;
+    border: 0.5px solid black;
   }
   .menu > li > a {
     text-decoration: none;

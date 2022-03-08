@@ -603,8 +603,7 @@ form .inputBoton:focus {
 }
 
 .nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
-  height: 400px;
-  width: 400px;
+  width: 50%;
   border: 2px solid black;
 }
 
@@ -1090,14 +1089,7 @@ form .inputBoton:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-  body {
-    background-color: red;
-  }
   /*---------------------NOSOTROS--------------------------*/
-  .nosotros__1__imgMap__img, .nosotros__1__imgMap__map {
-    height: 300px;
-    width: 300px;
-  }
   .nosotros .imgNos {
     height: 350px;
     width: 350px;
@@ -1204,7 +1196,6 @@ form .inputBoton:focus {
 
 @media only screen and (max-width: 350px) {
   body {
-    background-color: blue;
     padding: 0;
     margin: 0;
     overflow-x: auto;

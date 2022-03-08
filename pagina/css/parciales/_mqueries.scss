@@ -120,15 +120,7 @@
         align-items: center;
     }
 
-    body{
-        background-color: red;
-    }
-
     /*---------------------NOSOTROS--------------------------*/
-
-    .nosotros__1__imgMap__img{
-        @include sizes(300px, 300px);
-    }
 
     .nosotros .imgNos{
         @include sizes(350px, 350px);
@@ -227,7 +219,6 @@
 @media only screen and (max-width: 350px) {
 
     body{
-        background-color: blue;
         padding: 0;
         margin: 0;
         overflow-x:auto;
